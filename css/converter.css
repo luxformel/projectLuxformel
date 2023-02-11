@@ -1,0 +1,111 @@
+/*Converter styling*/
+select,
+input {
+  margin: 0.5rem;
+  padding: 7px;
+  outline: none;
+  border: 1px solid var(--black);
+  color: var(--black);
+  background-color: var(--darker-greyColor);
+}
+select:focus,
+input:focus {
+  box-shadow: 0 0 4px var(--accentColor);
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+.select-property {
+  color: var(--black);
+}
+
+.converter-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.converter-wrapper input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.converter-wrapper span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+.converter-wrapper span select {
+  opacity: 1;
+  color: var(--black);
+  font-size: inherit;
+  padding: 15px;
+  width: 100%;
+  border: 0;
+  margin: 0;
+  margin-left: 10px;
+  border-radius: 0px;
+  text-indent: 0.01px;
+  text-overflow: "";
+}
+.converter-wrapper span::before,
+.converter-wrapper span::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.converter-side-a,
+.converter-side-b {
+  float: left;
+  margin-top: 10px;
+  box-sizing: border-box;
+  width: 45%;
+}
+.converter-side-a {
+  width: 48%;
+  float: left;
+}
+
+.converter-side-b {
+  width: 48%;
+  float: right;
+}
+input {
+  width: auto;
+}
+/*main wrapper*/
+.main-wrapper {
+  margin: 0 auto;
+  padding: 30px;
+}
+/*text styling*/
+.padding {
+  padding: 30px;
+  margin-top: 100px;
+}
+/*converter Link Styling*/
+.coverterLinks {
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 35px;
+}
+.converterLinkAnchor {
+  text-decoration: none;
+  color: var(--accentColor);
+}
+.converterLinkAnchor:hover {
+  color: var(--bg);
+}
+
+h1 {
+  margin-bottom: 2rem;
+}

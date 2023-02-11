@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="lb" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script src="../assets/insertChapterHTML.js"></script>
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script defer src="../feedbackPopup.js"></script>
+    <script defer src="../print.js"></script>
+    <script async src="../Themes JavaScript/themeChapter.js"></script>
+
+    <link rel="stylesheet" href="progra.css" />
+
+    <title>Diviseure Sichen</title>
+  </head>
+  <body>
+    <my-navigator></my-navigator>
+    <div class="container">
+      <div class="main-wrapper">
+        <div class="center-wrapper">
+          <h1>Diviseuren Sichen</h1>
+          <form action="">
+            <input
+              class="number-input"
+              type="number"
+              name="zuel"
+              id="divZuel"
+            />
+            <div class="q100">
+              <button class="btn" type="button" onclick="getDiv()">
+                Diviseure Sichen
+              </button>
+            </div>
+            <textarea id="output" class="output-textarea"></textarea>
+          </form>
+        </div>
+      </div>
+      <script>
+        function getDiv() {
+          let number = document.getElementById("divZuel").value;
+          let resultList = new Array();
+          //console.log(number);
+          //2 for schläifen mat enger mat nemmen negativen zuelen an eng mat positiven?
+          for (var i = -1 * number; i <= number; i++) {
+            let testNumber = number % i;
+            if (testNumber == 0) {
+              resultList.push(number / i);
+            }
+          }
+          //console.table(resultList);
+          document.getElementById("output").innerHTML = resultList;
+        }
+      </script>
+      <footer id="footer">
+        <p class="footerTextColor">
+          luxformel.info <br />
+          <br />
+          Designed by: <br />
+          Niederkorn Damon <br />
+          <br />
+          E-mail: <br />
+          feedback@luxformel.info
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

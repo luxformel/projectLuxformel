@@ -1,0 +1,36 @@
+/*root*/
+:root {
+  --vampir: #fff;
+  --hacker: rgb(0, 128, 0);
+  --scale-factor: 1;
+  --darker-greyColor: #555;
+  --darkBackgroundColor: #292929;
+  --white: rgb(8, 8, 8);
+  --th-bgColor: #0088076e;
+  --accentColor: rgba(110, 81, 255, 0.6);
+  --black: rgb(79, 197, 24);
+  --background-color: #0e0e0e;
+  --sixColor: rgba(1, 255, 1, 0.795);
+  --oneEColor: #09ff00;
+  --bg: rgba(83, 113, 245, 0.5);
+  --d3: #3d9e349d;
+  --odd-th-color: rgba(32, 72, 7, 0.793);
+  --search-font: black;
+}
+/*MathJax Config*/
+.MJX-TEX {
+  color: #09ff00;
+}
+
+@font-face {
+  font-family: "Major";
+  src: url(../../fonts/SlimDownRound.ttf);
+}
+.splashScreenText {
+  text-transform: uppercase;
+  word-spacing: 1rem;
+  line-height: 3rem !important;
+  font-size: 2rem !important;
+  font-weight: lighter;
+  font-family: "Major", sans-serif !important;
+}

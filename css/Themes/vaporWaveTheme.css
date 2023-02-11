@@ -1,0 +1,84 @@
+/*root*/
+:root {
+  --vampir: #000;
+  --hacker: green;
+  --scale-factor: 1;
+  --darker-greyColor: #9d3febc9;
+  --darkBackgroundColor: rgba(27, 27, 96, 0.754);
+  --white: rgba(233, 218, 235);
+  --th-bgColor: rgba(192, 37, 189, 0.533);
+  --accentColor: hwb(308 7% 24% / 0.638);
+  --black: black;
+  --background-color: #47e3e9c0;
+  --sixColor: rgb(80, 65, 142);
+  --oneEColor: #1e1e1e;
+  --bg: rgba(0, 251, 255, 0.5);
+  --d3: #d3d3d3;
+  --odd-th-color: rgba(237, 172, 237, 0.121);
+  --search-font: black;
+}
+
+@font-face {
+  font-family: "Geo";
+  src: url(../../fonts/Geo-Italic.ttf);
+}
+
+/*MathJax Config*/
+.MJX-TEX {
+  color: rgb(9, 124, 128);
+}
+p {
+  font-family: "Roboto Mono", monospace !important;
+  color: rgba(0, 35, 99, 0.918) !important;
+  font-size: 1.1rem !important;
+}
+/*japanese charaters*/
+.splashScreenText {
+  text-transform: uppercase;
+  word-spacing: 1rem;
+  line-height: 3rem !important;
+  font-size: 3rem !important;
+  font-weight: bolder;
+  font-family: "Geo", sans-serif !important;
+}
+#footer {
+  background-color: rgba(4, 3, 23, 0.979) !important;
+}
+.footerTextColor {
+  color: #fff !important;
+}
+h2 {
+  font-family: "Roboto Mono", monospace !important;
+  color: #9d3febc9 !important;
+}
+.boxlink {
+  box-shadow: 2px 2px 3px var(--accentColor);
+}
+
+.card {
+  background-image: url(vaproWave/linus-nylund-JP23z_-dA74-unsplash.jpg);
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+ul li a:hover {
+  color: #fff !important;
+}
+
+.output {
+  background-color: rgba(255, 255, 255, 0.297) !important;
+}
+.output .previous-operand {
+  color: #000 !important;
+}
+.output .current-operand {
+  color: #000 !important;
+}
+
+::selection {
+  color: rgba(0, 0, 0, 0.526) !important;
+}
+
+hr {
+  border-top: 2px solid rgb(0, 0, 0) !important;
+}

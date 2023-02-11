@@ -1,0 +1,83 @@
+/*root*/
+:root {
+  --vampir: #000;
+  --hacker: green;
+  --scale-factor: 1;
+  --darker-greyColor: #999;
+  --darkBackgroundColor: rgb(218, 218, 218);
+  --white: #fff;
+  --th-bgColor: #bebdbd;
+  --accentColor: hsl(250 100% 50% / 0.6);
+  --black: black;
+  --background-color: #f2f2f2;
+  --sixColor: #666;
+  --oneEColor: #1e1e1e;
+  --bg: rgba(185, 52, 247, 0.5);
+  --d3: #d3d3d3;
+  --odd-th-color: rgba(211, 211, 211, 0.316);
+  --search-font: black;
+  --temp: #7d68f9;
+}
+/*MathJax Config*/
+.MJX-TEX {
+  color: #000 !important;
+}
+
+nav {
+  background-color: cyan !important;
+}
+.boxlink {
+  background-color: #f2f2f2;
+}
+.boxlink h3:hover {
+  color: blue !important;
+}
+.changeLogText {
+  color: #666 !important;
+}
+
+li a {
+  text-decoration: none !important;
+  text-transform: none !important;
+  font-family: "Roboto Mono", monospace !important;
+  color: #1e1e1e !important;
+}
+
+ul li a:hover {
+  color: #fff !important;
+}
+p {
+  font-family: "Times New Roman";
+  text-align: justify;
+}
+h3 {
+  font-style: italic !important;
+}
+#footer {
+  background-color: black !important;
+}
+
+.footerTextColor {
+  color: white !important;
+  text-align: center !important;
+  font-family: "Roboto Mono", monospace !important;
+}
+
+h1 {
+  text-decoration: underline !important;
+  text-transform: uppercase !important;
+  font-family: Arial !important;
+  font-weight: bolder !important;
+}
+
+h2 {
+  text-decoration: underline;
+}
+.frontPageBoxlinls {
+  text-decoration: none !important;
+  color: black !important;
+  font-family: "Roboto Mono", monospace !important;
+}
+.indexLink:hover {
+  color: blue !important;
+}

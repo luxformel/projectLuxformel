@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="lb" dir="ltr">
+  <head>
+  <meta http-equiv="cache-control" content="max-age=43200" />
+    <meta charset="utf-8" />
+    <meta name="author" content="Niederkorn Damon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+    <link rel="stylesheet" href="progra.css" />
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>  </title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="inlineNav">
+          <a href="../index.html">luxformel</a>
+        </li>
+        <li class="inlineNav"><a href="../readme.html">Read Me</a></li>
+        <li class="inlineNav">
+          <a class="phone" href="../feedback.html">Feedback</a>
+        </li>
+        <li class="inlineNav">
+          <a class="iPad" href="../matheIndex.html">Mathe</a>
+        </li>
+        <li class="inlineNav">
+          <a class="iPad" href="../physikIndex.html">Physik</a>
+        </li>
+        <li class="inlineNav">
+          <a class="iPad" href="../chimieIndex.html">Chimie</a>
+        </li>
+        <li class="inlineNav">
+          <a class="iPad" href="../diversIndex.html">Divers</a>
+        </li>
+        <li class="inlineNav">
+          <a
+            class="computer"
+            target="_blank"
+            href="../Calculator/calculator.html"
+            >Rechemaschinn
+            </a
+          >
+        </li>
+        <li class="inlineNav">
+          <div class="searchImg">
+            <a href="../search.html">
+          <img src="../img/black-24dp-2/2x/baseline_search_black_24dp.png" alt="searchIcon">
+        </a>
+      </div>
+      </li>
+      </ul>
+    </nav>
+    <div class="main-wrapper">
+        <div class="center-wrapper">
+            <h1>  </h1>
+
+            <form action="">
+        
+            </form>
+            </div>                
+        </div>
+    <script>
+    </script>
+  </body>
+</html>

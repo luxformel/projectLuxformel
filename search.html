@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="lb" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Niederkorn Damon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="searchCode.js"></script>
+    <script defer src="Themes JavaScript/theme.js"></script>
+    <script src="PWA/index.js"></script>
+    <script src="assets/insertRootHTML.js"></script>
+    <link rel="stylesheet" href="css/searchStyle.css" />
+
+    <title>Search</title>
+  </head>
+
+  <body>
+    <my-navigator></my-navigator>
+    <main>
+      <div class="main-wrapper">
+        <div class="search-wrapper">
+          <label for="search"
+            >Sicht no Fächer, Kapitelen oder Stechwierder</label
+          >
+          <input
+            placeholder="Search"
+            maxlength="50"
+            class="seachField"
+            type="search"
+            id="search"
+            data-search
+          />
+        </div>
+        <div class="resource-cards">
+          <template id="card">
+            <div class="card" class="visible" id="p">
+              <h5 id="h5ID"></h5>
+              <a href="" target="_blank" id="aID" class="searchCardLinks"></a>
+              <h6 id="idID"></h6>
+            </div>
+          </template>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

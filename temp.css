@@ -1,0 +1,66 @@
+.borderInstall > p {
+  font-size: 2rem;
+  text-align: center;
+}
+.borderInstall {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80ch;
+}
+.hello {
+  padding: 2rem;
+  border-block-start: 10px solid;
+  border-inline-start: 10px solid;
+  border-image-source: radial-gradient(
+    circle at top left,
+    var(--accentColor),
+    transparent 98%
+  );
+  border-image-slice: 1;
+}
+.hello p {
+  opacity: 0.7;
+}
+.tutorial {
+  width: 100%;
+}
+/*PWA install link*/
+.pwaLink {
+  margin: 10px;
+  width: calc(100% - 20px);
+  background-color: aqua;
+  cursor: pointer;
+  animation: gradient 10s ease 0s infinite alternate;
+}
+.header-install {
+  text-align: center;
+}
+@keyframes gradient {
+  0% {
+    background-color: crimson;
+  }
+  12% {
+    background-color: chartreuse;
+  }
+  25% {
+    background-color: blue;
+  }
+  37% {
+    background-color: springgreen;
+  }
+  50% {
+    background-color: green;
+  }
+  62% {
+    background-color: paleturquoise;
+  }
+  75% {
+    background-color: yellow;
+  }
+  87% {
+    background-color: fuchsia;
+  }
+  100% {
+    background-color: aqua;
+  }
+}

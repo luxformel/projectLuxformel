@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script src="../assets/insertChapterHTML.js"></script>
+    <script src="../assets/mathJax.js"></script>
+
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script defer src="../feedbackPopup.js"></script>
+    <script defer src="../print.js"></script>
+    <script async src="../Themes JavaScript/themeChapter.js"></script>
+
+    <title>Probabilités</title>
+  </head>
+  <body>
+    <my-navigator></my-navigator>
+    <div class="main-wrapper">
+      <p id="printWatermark"></p>
+      <h1>Probabilités</h1>
+      <h2>Dénombrement</h2>
+      <h3>Définition</h3>
+      <p>
+        Dénombrer, c'est calculer le nombre de possibilités de grouper un
+        certain nombre d'éléments d'un ensemble.
+      </p>
+      <h2>Probabilité d'un événement</h2>
+      <h3>Définition</h3>
+      <p>
+        Soit une expérience aléatoire d'univers $\Omega$ fini, avec $\Omega = \{
+        e_1; e_2; ... ;e_n \}$
+      </p>
+      <ol>
+        <li>
+          <p>
+            Définir une loi de probabilité sur $\Omega$, c'est associer à chaque
+            issue e_i un nombre positif $p(e_i)$ tel que:
+          </p>
+          $$ p(e_1) + p(e_2) +...+ p(e_n) = 1 $$
+        </li>
+        <li>
+          <p>
+            Le nombre $p(e_i)$ est appelé :
+            <u>probabilité de l'événement élémentaire</u>
+          </p>
+        </li>
+        <li>
+          <p>
+            La probabilité d'un événement $A$, notée $p(A)$, est la somme des
+            probabilités de toutes les issues qui réalisent $A$.
+          </p>
+        </li>
+      </ol>
+      <h3>Propriétés</h3>
+      <ol>
+        <li>
+          <p>La probabilité de l'événement certain $\Omega$ vaut:</p>
+          $$ p(\Omega) = 1 $$
+        </li>
+        <li>
+          <p>La probabilité de l'événement impossible $\emptyset$ vaut:</p>
+          $$ p(\emptyset) = 0 $$
+        </li>
+        <li>
+          <p>Pour tout événement $A$, on a:</p>
+          $$ 0 \leqslant p(A) \leqslant 1$$
+        </li>
+        <li>
+          <p>Pour tout événement $A$, $p(A) + p(\bar{A}) = 1$</p>
+        </li>
+      </ol>
+      <h3>Définition</h3>
+      <p>
+        Si une expérience aléatoire d'univers $\Omega$, avec $\Omega = \{ e_1;
+        e_2; ... ;e_n \}$. Si tous les événements élémentaires ont la même
+        probabilité, on dit qu'ils sont équiprobable, et on a:
+      </p>
+      $$ p(e_1) = p(e_2) = ... = p(e_n) = \frac{1}{n} = \frac{1}{card \Omega }
+      $$
+      <div class="xScrollable">
+        <table>
+          <tr>
+            <th><p>Groupement</p></th>
+            <th><p>Charactérisiques</p></th>
+            <th><p>Noation</p></th>
+            <th><p>Formule</p></th>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                Arrangement avec répétition <br />
+                de $p$ éléments distincts ou non choisi parmi $n$ éléments
+                distincts
+              </p>
+            </td>
+            <td>
+              <ul>
+                <li>
+                  <p>Les éléments donnés ne sont pas tous utilisés.</p>
+                </li>
+                <li>
+                  <p>Les $p$ éléments choisi peuvent se répéter.</p>
+                </li>
+                <li>
+                  <p>
+                    Deux groupements diffèrent soit par l'ordre soit par la
+                    nature des éléments.
+                  </p>
+                </li>
+              </ul>
+            </td>
+            <td>
+              <p>$B_n^p$</p>
+            </td>
+            <td>
+              <p>$B^{p}_{n}=n^{p}$</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                Permutation <br />
+                de $n$ éléments distincts
+              </p>
+            </td>
+            <td>
+              <ul>
+                <li><p>Les $n$ éléments sont tous utilisés.</p></li>
+                <li><p>Les éléments ne se répètent pas.</p></li>
+                <li>
+                  <p>
+                    Deux groupements diffèrent uniquement par l'ordre des
+                    éléments.
+                  </p>
+                </li>
+              </ul>
+            </td>
+            <td>
+              <p>$P_n$</p>
+            </td>
+            <td>
+              <p>$P_{n}=n!$</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                Arrangement sans répétition <br />
+                de $p$ éléments distincts choisis parmi $n$ éléments distincts
+                <br />
+                $p \leqslant n$
+              </p>
+            </td>
+            <td>
+              <ul>
+                <li>Les $n$ éléments donnés ne sont pas tous utilisés.</li>
+                <li>Les $p$ éléments choisis ne se répètent pas.</li>
+                <li>
+                  Deux groupements diffèrent soit par l'ordre soit par la nature
+                  des éléments.
+                </li>
+              </ul>
+            </td>
+            <td><p>$A^{p}_{n}$</p></td>
+            <td><p>$A^{p}_{n}=\frac{n!}{(n-p)!} $</p></td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                Combinaison <br />
+                de $p$ éléments distincts choisis parmi $n$ éléments distincts
+                <br />
+                $p \leqslant n$
+              </p>
+            </td>
+            <td>
+              <ul>
+                <li>Les $n$ éléments donnés ne sont pas tous utilisés.</li>
+                <li>Les $p$ éléments choisis ne se répètent pas.</li>
+                <li>
+                  Deux groupements diffèrent uniquement par la nature des
+                  éléments.
+                </li>
+              </ul>
+            </td>
+            <td>
+              <p>$C^{p}_{n}$</p>
+            </td>
+            <td>
+              <p>
+                $C^{p}_{n}=\frac{n!}{p!\left( n-p\right) !}
+                =\frac{A^{p}_{n}}{P_{n}} $
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h2>Vocabulaire des événements</h2>
+      <h3>Définition</h3>
+      <ol>
+        <li>
+          <p>
+            Une expérience est dite <u>aléatoire</u> lorsqu'elle a plusieurs
+            résultats possible et qu'on ne peut pas prévoir lequel sera obtenu.
+            Le résultat d'une tell expérience est uniquement dû au hasard.
+          </p>
+        </li>
+        <li>
+          <p>
+            Une <u>issue</u> d'une expérience aléatoire est un résultat possible
+            pour cette expérience.
+          </p>
+        </li>
+        <li>
+          <p>
+            L'ensemble de toutes les issues d'une expérience aléatoire est
+            appelé <u>univers</u> associé à cette expérience. <br />
+            On note souvent: $\Omega$
+          </p>
+        </li>
+        <li>
+          <p>
+            Un événement $A$ est sous-ensemble de l'ensemble $\Omega$. <br />
+            On dit qu'une issue <u>réalise</u> un événement $A$ lorsque cette
+            issue est un résultat appartenant à la partie $A$.
+          </p>
+        </li>
+      </ol>
+      <h3>Schéma</h3>
+      <img
+        src="img/probabilites/universSchema.png"
+        alt="schema univers probabilité"
+        class="zeichnungen"
+      />
+      <h2>Événements particuliers</h2>
+      <ol>
+        <li>
+          <p>
+            L'événement impossible est l'ensemble vide noté $\emptyset$ : aucune
+            issue ne le réalise.
+          </p>
+        </li>
+        <li>
+          <p>
+            L'événement certain est l'univers $\Omega$: toutes les issues le
+            réalisent.
+          </p>
+        </li>
+        <li>
+          <p>
+            Un événement élémentaire est un événement formé d'une seule issue.
+          </p>
+        </li>
+      </ol>
+      <h2>Événements</h2>
+      <h3>Définition</h3>
+      <p>
+        L'intersection de $A$ et $B$, notée $A \bigcap B$ ou $A$ et $B$, est
+        l'événement constitué des issues qui réalisent $A$ <u>et</u> $B$ en même
+        temps.
+      </p>
+      <img
+        src="img/probabilites/intersectionUnion.png"
+        alt="a intersection b"
+        class="zeichnungen"
+      />
+      <h3>Définition</h3>
+      <p>
+        Dans le cas où $A$ et $B$ ne peuvent pas être réalisés en même temps,
+        c'est à dire si $A \bigcap B \notin \emptyset$, on dit que $A$ et $B$
+        sont incompatible ou disjoint.
+      </p>
+      <img
+        src="img/probabilites/incompatible.png"
+        alt="incompatible"
+        class="zeichnungen"
+      />
+      <h3>Définition</h3>
+      <p>
+        La réunion de $A$ et de $B$, notée $A \bigcup B$ ou $A$ ou $B$, est
+        l'événement constitué des issues qui réalisent $A$ <u>ou</u> $B$, c'est
+        à dire au moins l'un des deux.
+      </p>
+      <img
+        src="img/probabilites/intersectionUnion.png"
+        alt="a union b"
+        class="zeichnungen"
+      />
+      <h3>Définition</h3>
+      <p>
+        L'événement contraire de $A$, noté $\bar{A}$ est constitué [...] de
+        $\Omega$ qui ne réalisent pas $A$
+      </p>
+      <img
+        src="img/probabilites/evenementContraire.png"
+        alt="a union b"
+        class="zeichnungen"
+      />
+      <h3>Propriété</h3>
+      <p>
+        Soit une expérience aléatoire où les événements élémentaires sont
+        équiprobables et soit $A$ un événement, alors on a:
+      </p>
+      $$ p(A) = \frac{nombre\ d'issues\ de\ A}{nombre\ totales\ d'issues} $$ $$
+      =\frac{nombre\ d'issues\ favorable\ de\ A}{nombres\ d'issues\ possibles}
+      $$
+    </div>
+    <div class="scrollButton">
+      <a href="#">Zeréck no uewen</a>
+    </div>
+  </body>
+</html>

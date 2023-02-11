@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Niederkorn Damon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../assets/insertChapterHTML.js"></script>
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script defer src="../feedbackPopup.js"></script>
+    <script defer src="../print.js"></script>
+    <script async src="../Themes JavaScript/themeChapter.js"></script>
+
+    <title>Gravitation</title>
+  </head>
+  <body>
+    <my-navigator></my-navigator>
+    <div class="main-wrapper">
+      <p id="printWatermark"></p>
+      <h1>Gravitation</h1>
+      <h2>Newtons Gravitationsgesetz</h2>
+      <h3></h3>
+      $$\overrightarrow{F_{A\ auf\ B}} =-\overrightarrow{F_{B\ auf\ A}} =-G\cdot
+      \frac{m_{A}m_{B}}{r^{2}} $$ $$\overrightarrow{F_{A\ auf\ B}} \ \rightarrow
+      Kraft\ von\ A\ auf\ B$$ $$\overrightarrow{F_{B\ auf\ A}} \ \rightarrow
+      Kraft\ von\ B\ auf\ A$$ $$G,\ ist\ die\ Gravitationskonstante $$
+      $$G=6,67390\cdot 10^{-11}\frac{Nm^{2}}{kg^{2}}$$
+      <h2>Keplersche Gesetze</h2>
+      <ol>
+        <li>
+          <p><u>Keplersche Gesetz:</u></p>
+          <p>
+            Die Planeten bewegen sich auf elliptischen Bahnen, in deren einem
+            Brennpunkt die Sonne steht.
+          </p>
+        </li>
+        <li>
+          <p><u>Keplersche Gesetz:</u></p>
+          <p>
+            Der Radiusvektor von der Sonne zum Planeten überstreicht in gleichen
+            Zeiten gleiche Flächen.
+          </p>
+        </li>
+        <li>
+          <p><u>Keplersche Gesetz:</u></p>
+          <p>
+            Der Quadrat der Umlaufzeit \( T \) eines Planeten ist proportional
+            zum Kubus der gro&beta;en Bahnhalbachse \( a \) der Umlaufbahn.
+          </p>
+          $$\frac{T^{2}_{1}}{a^{3}_{1}} =\frac{T^{2}_{2}}{a^{3}_{2}} =konstant$$
+        </li>
+      </ol>
+      <h2>Bahngeschwindigkeit eines Satelliten</h2>
+      <h3>Herleitung</h3>
+      <p>Da:</p>
+      $$ \overrightarrow{F} = \overrightarrow{F_{Grav}} = m \cdot
+      \overrightarrow{a} = m \cdot \overrightarrow{a_{zp}} $$
+      <p>
+        Da nur eine Kraft am Satelliten angreift und diese Kraftrichtung bekannt
+        ist, kann das Gesetz in skalarer Form geschrieben werden.
+      </p>
+      $$ F_{Grav} = m \cdot a_{zp} $$ $$ \Leftrightarrow G\cdot \frac{m\cdot
+      M}{r^{2}} =m\cdot \frac{v^{2}}{r} $$ $$\Leftrightarrow G\cdot \frac{M}{r}
+      =v^{2}$$ $$\Leftrightarrow v=\sqrt{\frac{G\cdot M}{r} } $$
+      <p>
+        Der Satellit bewegt sich in Höhe \( h \) über dem Boden eines
+        Himmelskörpers. Mit einbeziehung deren Radiuses \( R \) erhalten wir: \(
+        r=R+h \) <br />
+        Einsetzen:
+      </p>
+      $$\Leftrightarrow v=\sqrt{\frac{G\cdot M}{R + h} } $$
+      <h3>Formel</h3>
+      $$v=\sqrt{\frac{G\cdot M}{R + h} } $$
+      <h2>Periodendauer eines Satelliten</h2>
+      <h3>Herleitung</h3>
+      <p>
+        Da die Bahngeschwindigkeit \( v \) der Quotient aus Kreisumfang und
+        Umlaufzeit \( T \) entspricht.
+      </p>
+      $$ v=\frac{2 \pi \cdot r}{T}$$ $$\Leftrightarrow T=\frac{2 \pi \cdot r}{v}
+      $$ $$\Leftrightarrow T=\frac{2 \pi \cdot r}{\sqrt{\frac{G\cdot M}{r} }} $$
+      $$\Leftrightarrow T= 2 \pi\frac{r \cdot \sqrt{r}}{\sqrt{G\cdot M}} $$
+      $$\Leftrightarrow T= 2 \pi\frac{\sqrt{r^3}}{\sqrt{G\cdot M}} $$
+      $$\Leftrightarrow T= 2 \pi \sqrt {\frac{(R+h)^3}{G\cdot M}} $$
+      <h3>Formel</h3>
+      $$T= 2 \pi \sqrt {\frac{(R+h)^3}{G\cdot M}} $$
+    </div>
+    <div class="scrollButton">
+      <a href="#">Zeréck no uewen</a>
+    </div>
+  </body>
+</html>

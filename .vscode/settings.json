@@ -1,0 +1,23 @@
+{
+  "editor.fontSize": 22,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.requireConfig": false,
+  "cSpell.words": [
+    "Bogenma",
+    "einschlie",
+    "Fadenpendels",
+    "flie",
+    "Generatorprinzip",
+    "geradlining",
+    "gleichmä",
+    "Hooke'schen",
+    "Huygens'sche",
+    "mathbb",
+    "mathscr",
+    "Oszillators",
+    "regelmä",
+    "Richtgrö",
+    "uewen"
+  ]
+}

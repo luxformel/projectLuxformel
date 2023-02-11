@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Niederkorn Damon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../assets/insertChapterHTML.js"></script>
+    <script defer src="../feedbackPopup.js"></script>
+    <script defer src="../print.js"></script>
+    <script async src="../Themes JavaScript/themeChapter.js"></script>
+    <script src="Dependencies/prismLATEX.js"></script>
+    <script async src="Dependencies/copyButtonLATEXPrism.js"></script>
+
+    <link rel="stylesheet" href="Dependencies/okaida.css" />
+    <link rel="stylesheet" href="Dependencies/buttonPrism.css" />
+
+    <title>LATEX Basics</title>
+  </head>
+  <body>
+    <my-navigator></my-navigator>
+    <div class="main-wrapper">
+      <p id="printWatermark"></p>
+      <h1>LATEX Basics</h1>
+      <p>Latex is a markup language used to create scientific documentation.</p>
+      <h2>Comment</h2>
+      <div class="code-container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="language-latex">
+% This is a comment
+            </code>
+        </pre>
+        </div>
+      </div>
+      <h2>Basic Notation</h2>
+      <div class="code-container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="language-latex">
+%Brackets
+( )
+[ ]
+%addition sign
++
+%substration sign
+-
+%multiplication sign
+\times
+\cdot
+%division signs
+/
+:
+% make a fraction
+\frac{numerator}{denominator}
+% inverse sign
+^{-1}
+%plus minus sign
+\pm
+%minus plus sign
+\mp
+%square root 
+\sqrt{}
+%cube root 
+\sqrt[3]{}
+%nth root 
+\sqrt[n]{}
+%percent
+\%
+%
+            </code>
+        </pre>
+        </div>
+      </div>
+
+      <h2>Number sets</h2>
+      <p>
+        For futher explanation visit : Mathématiques
+        <a href="../Mathe/ensemblesDesNombres.html">ensembles des nombres</a>.
+      </p>
+      <div class="code-container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="language-latex">
+% ensemble des entiers naturels
+\mathbb{N}
+% ensemble des entiers relatifs
+\mathbb{Z}
+% ensemble des décimaux
+\mathbb{D}
+% ensemble des rationnels
+\mathbb{Q}
+% ensemble des réels
+\mathbb{R}
+% ensemble des complexes
+\mathbb{C}
+% ensemble des quaternions
+\mathbb{H}
+% ensemble des octonions
+\mathbb{O}
+% ensemble des sédénions
+\mathbb{S}
+% ensemble des pathions
+\mathbb{P}
+% ensemble des chingons
+\mathbb{X}
+% ensemble des routons
+\mathbb{U}
+% ensemble des voudrons
+\mathbb{V}
+            </code>
+        </pre>
+        </div>
+      </div>
+      <h2>Quantifiers</h2>
+      <div class="code-container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="language-latex">
+% forall
+\forall
+%it exists
+\exists
+%does not exist
+\nexists
+            </code>
+        </pre>
+        </div>
+      </div>
+
+      <h2>Set construction</h2>
+      <div class="code-container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="language-latex">
+% Empty set
+\varnothingset
+            </code>
+        </pre>
+        </div>
+      </div>
+
+      <h2>Set operations</h2>
+      <div class="code-container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="language-latex">
+%intersection
+\cap
+%union
+\cup
+%difference
+\setminus
+            </code>
+        </pre>
+        </div>
+      </div>
+    </div>
+    <div class="scrollButton">
+      <a href="#">Zeréck no uewen</a>
+    </div>
+  </body>
+</html>

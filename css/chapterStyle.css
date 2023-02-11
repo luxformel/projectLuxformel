@@ -1,0 +1,259 @@
+/*main styling*/
+.main-wrapper {
+  max-width: 20cm;
+  margin: 0 10px;
+  padding: 10px;
+}
+/*Math jax configuration*/
+.MTH-TEX {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem !important;
+}
+/*Tables*/
+table,
+th,
+td {
+  border: 1px solid var(--vampir);
+  width: 90%;
+}
+
+table {
+  min-width: 70%;
+}
+strong {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+}
+
+th {
+  background-color: var(--th-bgColor);
+  padding: 5px;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--black);
+}
+td {
+  padding: 5px;
+  color: var(--black);
+}
+tr:nth-child(odd) > td {
+  background-color: var(--odd-th-color);
+}
+
+.noBorderTable > th,
+td {
+  border-left: none;
+  border-right: none;
+}
+.xScrollable {
+  overflow-x: scroll;
+  width: 100vw;
+}
+.tableLines > tr,
+td {
+  border: 1px solid var(--black);
+}
+.pseTable,
+td {
+  padding: 10px;
+}
+.pseTableGreen {
+  background-color: lightgreen;
+}
+.pseTableRed {
+  background-color: red;
+}
+.pseTablePink {
+  background-color: pink;
+}
+.pseTableLightBlue {
+  background-color: aqua;
+}
+.pseTableGrey {
+  background-color: grey;
+}
+.pseTableViolet {
+  background-color: blueviolet;
+}
+.pseTableBrown {
+  background-color: burlywood;
+}
+.pseTableYellow {
+  background-color: yellow;
+}
+/*quotes*/
+q {
+  display: inline;
+}
+
+q:before {
+  content: open-quote;
+}
+
+q:after {
+  content: close-quote;
+}
+
+/*button Styling*/
+button {
+  background-color: var(--accentColor);
+  padding: 10px;
+  border-radius: 12px;
+}
+/*scroll up link Styling*/
+.scrollButton {
+  text-align: center;
+}
+.scrollButton > a {
+  text-decoration: none;
+  color: var(--accentColor);
+  padding: 10px;
+  font-weight: bolder;
+  font-size: large;
+}
+.scrollButton > a:hover {
+  color: var(--darker-greyColor);
+}
+/*print Watermark*/
+.printWatermark {
+  font-size: 26px;
+  font-family: "Roboto Mono", monospace;
+  display: none;
+}
+/*Google Icons */
+/*img styling*/
+.zeichnungen {
+  width: 70%;
+}
+/*Optimisatioun fir Printfunktioun*/
+@media print {
+  nav {
+    display: none;
+  }
+  input {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  body {
+    background-color: white !important;
+    color: white !important;
+    width: inherit;
+    padding: 10px;
+    padding-left: 1cm;
+    padding-right: 0.1cm;
+    background-image: none;
+  }
+  .main-wrapper {
+    margin: none;
+    padding: none;
+  }
+
+  .printWatermark {
+    display: inherit;
+  }
+  a {
+    color: var(--vampir);
+    text-decoration: none;
+  }
+  .scrollButton {
+    display: none;
+  }
+  h2,
+  h3,
+  p {
+    color: black !important;
+  }
+  p {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  th {
+    background-color: #bebdbd;
+    padding: 5px;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+  }
+  td {
+    padding: 5px;
+    color: black;
+  }
+  tr:nth-child(odd) > td {
+    background-color: rgba(211, 211, 211, 0.316);
+  }
+  .MTH-TEX {
+    color: black !important;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid black !important;
+  }
+}
+/*feedback nav tag*/
+/*Optimisatioun fir mini handy*/
+@media only screen and (max-width: 500px) {
+  .phone {
+    display: inherit;
+  }
+  .main-wrapper {
+    padding-left: 20px;
+  }
+}
+/*Optimisatioun fir Handy*/
+@media only screen and (min-width: 500px) {
+  .phone {
+    display: inherit;
+  }
+  .main-wrapper {
+    padding-left: 25px;
+  }
+}
+/*Optimisatioun fir iPad mini/Air*/
+@media only screen and (min-width: 765px) {
+  .main-wrapper {
+    margin: 5px 50px;
+    margin-left: 30px;
+  }
+}
+/*Optimisatioun fir iPad*/
+@media only screen and (min-width: 910px) {
+  .main-wrapper {
+    margin: 5px 50px;
+    margin-left: 50px;
+  }
+
+  .iPad {
+    display: inherit;
+  }
+}
+/*Optimisatioun fir ComputerPlus*/
+@media only screen and (min-width: 1550px) {
+  .computerPlus {
+    display: inherit;
+  }
+  .main-wrapper {
+    margin: 5px 80px;
+    margin-left: 50px;
+  }
+}
+/*Optimisatioun fir Computer*/
+@media only screen and (min-width: 1445px) {
+  .main-wrapper {
+    margin: 5px 80px;
+    margin-left: 50px;
+  }
+  .computer {
+    display: inherit;
+  }
+}

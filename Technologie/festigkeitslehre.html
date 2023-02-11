@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script src="../assets/insertChapterHTML.js"></script>
+    <script src="../assets/mathJax.js"></script>
+
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script defer src="../feedbackPopup.js"></script>
+    <script defer src="../print.js"></script>
+    <script async src="../Themes JavaScript/themeChapter.js"></script>
+
+    <title>Festigkeitslehre</title>
+  </head>
+  <body>
+    <my-navigator></my-navigator>
+    <div class="main-wrapper">
+      <p id="printWatermark"></p>
+      <h1>Festigkeitslehre</h1>
+      <h2>Beanspruchung auf Zug</h2>
+      <p>
+        Im Werkstück entstehen Zugspannungen $\sigma_z$, welche senkrecht zum
+        beanspruchten Querschnitt stehen. Solche Spannungen nennt man
+        Normalspannungen.
+      </p>
+      <h3>Formel</h3>
+      $$ \sigma_z = \frac{F}{S} $$
+      <h2>Beanspruchung auf Druck</h2>
+      <p>
+        Bei der Druckbeanspruchung entstehen mi Werkstück Druckspannungen
+        $\sigma_{d}$ welche wie die Zugspannungen senkrecht zum beanspruchten
+        Querschnitt stehen. Druckspannungen sind also auch Normalspannungen.
+      </p>
+      <h3>Formel</h3>
+      $$ \sigma_d = \frac{F}{S} $$
+      <h2>Beanspruchung auf Abscherung</h2>
+      <p>
+        Hier entstehen mi Werkstück Scherspannungen $\tau_a$. Sie liegen inder
+        Querschnittsfläche und man bezeichnet sie als Schubspannungen.
+      </p>
+      <h3>Formel</h3>
+      $$ \tau_a = \frac{F}{S} $$
+      <h2>Beanspruchung auf Biegung</h2>
+      <p>
+        Bei der Biegebeanspruchung entstehen im Werkstück Normalspannungen
+        welche als Zugspannungen oder Druckspannungen auftreten. In den
+        Randfasern des Werkstücks sind die Spannungen am größten. Eine Faser ist
+        spannungslos, man bezeichnet sie als neutrale Faser.
+      </p>
+      <h3>Formel</h3>
+      $$ \sigma_{bmax} = \frac{M_v}{l}$$
+      <h2>Beanspruchung auf Verdrehung, Torsion</h2>
+      <p>
+        Die bei der Beanspruchung auf Verdrehung entstehenden Torsionsspannungen
+        sind Schubspannungen. Die Randfasern werden am stärksten beansprucht
+        während die Wellenachse spannungslos ist.
+      </p>
+      <h3>Formel</h3>
+      $$ \tau_{tmax} = \frac{M_tr}{l_p}$$
+      <h3>Konvetion</h3>
+      <p>
+        $\sigma$ steht für Normalspannungen diese sind senkrecht zum Schnitt und
+        $\tau$ (Tau) für Schubspannungen diese sind parallel zum Schnitt.
+      </p>
+      <h2>Zugspannungen</h2>
+      <p>
+        Der dargestellte Stab ist im Gleichgewicht unter Einwirkung der
+        äu&beta;eren Kräfte. Denken wir uns den Stab an einer beliebigen Stelle
+        durchgeschnitten. Um das Gleichgewicht zu erhalten muss an der
+        Schnittfläche die innere Kraft $F_N$ wirken. Da diese Kraft mit der
+        äußeren Kraft $F$ mi Gleichgewicht ist muss sie senkrecht zur
+        Schnittfläche stehen. Man bezeichnet sie deshalb als Normalkraft.
+      </p>
+      <p>
+        Die Kraft $F_N$ wirkt gleichmäßig auf alle Flächenteilchen des
+        Querschnittes. Wir können ein Ma&beta; für die Beanspruchung des
+        Werkstoffes erhalten wenn wir die Kraft $F_N$ durch den Querschnitt
+        teilen. Diese Grö&beta;e nennt man Spannung. Da die verursachende Kraft
+        eine Normalkraft ist erhalten wir eine Normalspannung. Die Zugspannung
+        ist also eine Normalspannung da sie senkrecht zum beanspruchten
+        Querschnitt steht.
+      </p>
+      <h3>Formeln</h3>
+      $$ Spannung = \frac{innere\ Kraft}{Querschnitt} $$ $$ \sigma_z =
+      \frac{F_N}{S} $$
+      <p>da $F_N = F$:</p>
+      $$ \sigma_z = \frac{F}{S} $$
+      <h3>Einheiten</h3>
+      $$ [F] = N $$ $$ [S] = mm^2 $$ $$oder\ [S] = m^2 $$ $$[\sigma_z] =
+      \frac{N}{mm^2}$$ $$oder\ [\sigma_z] = \frac{N}{m^2} = Pa$$
+      <h2>Gefährdeter Querschnitt</h2>
+      <p>
+        Bei der Dimensionierung von Maschinenteilen müssen die Ma&beta;e so
+        berechnet werden, dass eine bestimmte Spannung, die zulässige Spannung
+        nicht überschritten wird.
+      </p>
+      <table>
+        <tr>
+          <th>
+            <p>Beschreibung</p>
+          </th>
+          <th><p>Formel</p></th>
+        </tr>
+        <tr>
+          <td>
+            <p>zulässige Zugspannung</p>
+          </td>
+          <td>
+            <p>$\sigma_{z,\ zul} = \frac{F}{S}$</p>
+          </td>
+        </tr>
+        <tr>
+          <td><p>erforderlicher Querschnitt</p></td>
+          <td>
+            <p>$S_{erf} = \frac{F}{\sigma_{z,\ zul}}$</p>
+          </td>
+        </tr>
+        <tr>
+          <td><p>vorhandene Spannung</p></td>
+          <td><p>$\sigma_{z,\ vorha} = \frac{F}{S}$</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p>maximale Belastung</p>
+          </td>
+          <td><p>$F_{max} = S \cdot \sigma_{z,\ zul}$</p></td>
+        </tr>
+      </table>
+      <p>
+        Bei Berechnungen muss der Querschnitt der durch die Kraft $F$ belastet
+        wird richtig erkannt werden. Es ist immer der kleinstmögliche
+        Querschnitt.
+      </p>
+      <h2>Zugversuch</h2>
+      <p>
+        Beim Zugversuch wird ein zylindrischer Probestab einer langsam
+        steigenden Belastung ausgesetzt. Der unbelastete Stab hat einen
+        Querschnitt $S_0$ und eine Messstrecke $l_0$ ist durch zwei Markierungen
+        auf dem Stab festgelegt.
+      </p>
+      <p>
+        Bezeichnen wir die Länge unter Belastung mit $l$ so beträgt die
+        Längenzunahme $\Delta l = l - l_0$. <br />
+        Bezieht man die Längenzunahme auf die Messstrecke so erhält man die
+        Dehnung.
+      </p>
+      <h3>Formel</h3>
+      $$ Dehnung = \frac{Längenzunahme}{Me&beta;strecke} $$ $$\varepsilon =
+      \frac{\Delta l}{l_0}$$
+      <h3>Einheit</h3>
+      $$ [l] = mm^2$$ $$ \varepsilon,\ hat\ keine\ Einheit$$
+      <h3>Bemerkung</h3>
+      <p>Die Dehnung $\varepsilon$ wird oft in % angegeben.</p>
+    </div>
+    <div class="scrollButton">
+      <a href="#">Zeréck no uewen</a>
+    </div>
+  </body>
+</html>

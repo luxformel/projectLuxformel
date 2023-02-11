@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script src="../assets/insertChapterHTML.js"></script>
+    <script src="../assets/mathJax.js"></script>
+
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script defer src="../feedbackPopup.js"></script>
+    <script defer src="../print.js"></script>
+    <script async src="../Themes JavaScript/themeChapter.js"></script>
+
+    <title>Formelsammlung Wellenoptik</title>
+  </head>
+  <body>
+    <my-navigator></my-navigator>
+    <div class="main-wrapper">
+      <p id="printWatermark"></p>
+      <h1>Formelsammlung Wellenoptik</h1>
+      <h2>Konstruktive Interferenz, Verstärkung</h2>
+      $$ \Delta s = 2k \cdot \frac{\lambda}{2} $$
+      <p>mit $k \in \mathbb{Z}$</p>
+      <h2>Destruktive Interferenz, Auslöschung</h2>
+      $$ \Delta s = \left( 2K+1 \right) \cdot \frac{\lambda}{2}$$
+      <p>mit $k \in \mathbb{Z}$</p>
+      <h2>Resümierende Tabelle</h2>
+      <div class="xScrollable">
+        <table>
+          <tr>
+            <th>
+              <p>Spalttyp</p>
+            </th>
+            <th>
+              <p>Verstärkung</p>
+            </th>
+            <th>
+              <p>Auslöschung</p>
+            </th>
+            <th>
+              <p>Gültigkeits&shy;bedingung</p>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <p>Einfachspalt</p>
+            </td>
+            <td>
+              <p>$\sin(\alpha_k) = \frac{2k+1}{l} \cdot \frac{\lambda}{2}$</p>
+            </td>
+            <td>
+              <p>$\sin(\alpha_k) = \frac{2k}{l} \cdot \frac{\lambda}{2}$</p>
+            </td>
+            <td>
+              <p>$k \in \mathbb{Z}^*$</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Doppelspalt</p>
+            </td>
+            <td>
+              <p>$\sin(\alpha_k) = \frac{2k}{g} \cdot \frac{\lambda}{2}$</p>
+            </td>
+            <td>
+              <p>$\sin(\alpha_k) = \frac{2k+1}{g} \cdot \frac{\lambda}{2}$</p>
+            </td>
+
+            <td>
+              <p>$k \in \mathbb{Z}$</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Gitter</p>
+            </td>
+            <td>
+              <p>$\sin(\alpha_k) = \frac{2k}{g} \cdot \frac{\lambda}{2}$</p>
+            </td>
+            <td>-</td>
+            <td>
+              <p>$k \in \mathbb{Z}$</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="scrollButton">
+      <a href="#">Zeréck no uewen</a>
+    </div>
+  </body>
+</html>

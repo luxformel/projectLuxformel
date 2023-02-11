@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="lb" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script src="../assets/insertChapterHTML.js"></script>
+    <script defer src="../feedbackPopup.js"></script>
+    <script defer src="../print.js"></script>
+    <script async src="../Themes JavaScript/themeChapter.js"></script>
+    <script defer src="converter.js"></script>
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/converter.css" />
+
+    <title>Converter</title>
+  </head>
+  <body>
+    <my-navigator></my-navigator>
+    <div id="container">
+      <div class="main-wrapper">
+        <div class="converter-wrapper">
+          <h1>Converter</h1>
+          <form name="property_form">
+            <span>
+              <select
+                class="select-property"
+                name="the_menu"
+                size="1"
+                onChange="UpdateUnitMenu(this, document.form_A.unit_menu); UpdateUnitMenu(this, document.form_B.unit_menu)"
+              ></select>
+            </span>
+          </form>
+
+          <div class="converter-side-a">
+            <form name="form_A" onSubmit="return false">
+              <input
+                type="text"
+                class="numbersonly"
+                name="unit_input"
+                maxlength="20"
+                value="0"
+                onKeyUp="CalculateUnit(document.form_A, document.form_B)"
+              />
+              <span>
+                <select
+                  name="unit_menu"
+                  onChange="CalculateUnit(document.form_A, document.form_B)"
+                ></select>
+              </span>
+            </form>
+          </div>
+          <!-- /converter-side-a -->
+          <!-- /converter-side-a -->
+
+          <div class="converter-side-b">
+            <form name="form_B" onSubmit="return false">
+              <input
+                type="text"
+                class="numbersonly"
+                name="unit_input"
+                maxlength="20"
+                value="0"
+                onkeyup="CalculateUnit(document.form_B, document.form_A)"
+              />
+              <span>
+                <select
+                  name="unit_menu"
+                  onChange="CalculateUnit(document.form_A, document.form_B)"
+                ></select>
+              </span>
+            </form>
+          </div>
+          <!-- /converter-side-b -->
+          <div class="padding">
+            <p class="coverterLinks">
+              Fir Erklärungen kuckt
+              <a
+                class="converterLinkAnchor"
+                href="Divers/exotischeUmwandlungen.html"
+              >
+                exotische Umwandlungen</a
+              >
+              oder
+              <a class="converterLinkAnchor" href="Divers/praefixe.html"
+                >Präfixe</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /converter-wrapper -->
+    <footer id="footer">
+      <p class="footerTextColor">
+        luxformel.info <br />
+        <br />
+        Designed by: <br />
+        Niederkorn Damon <br />
+        <br />
+        E-mail: <br />
+        feedback@luxformel.info
+      </p>
+    </footer>
+  </body>
+</html>
