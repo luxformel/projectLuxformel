@@ -166,6 +166,7 @@ var splashTexts = [
   "send me an angel",
   "promises, promises",
   "Ee Formelheft mä Online!",
+  "git commit innit?",
   "1/168",
 ];
 function generateRandomText() {
