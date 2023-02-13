@@ -168,6 +168,7 @@ var splashTexts = [
   "Ee Formelheft mä Online!",
   "git commit innit?",
   "join us on github",
+  "Oh So Magnanimous!",
   "1/170",
 ];
 function generateRandomText() {
