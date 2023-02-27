@@ -11,16 +11,26 @@ factor[] = new Array();
  */
 
 property[0] = "Distanz";
-unit[0] = new Array("m", "km", "Å", "sm", "ft", "in", "yd", "mi");
-factor[0] = new Array(1, 1e3, 10e-5, 1852, 0.3048, 0.0254, 0.9144, 1609.344);
+unit[0] = new Array("m", "km", "Å", "lj", "sm", "ft", "in", "yd", "mi");
+factor[0] = new Array(
+  1,
+  1e3,
+  10e-5,
+  9_460_730_472_580_800,
+  1852,
+  0.3048,
+  0.0254,
+  0.9144,
+  1609.344
+);
 
 property[1] = "Druck";
 unit[1] = new Array("Pa", "bar", "atm");
-factor[1] = new Array(1, 1e5, 101325);
+factor[1] = new Array(1, 1e5, 101_325);
 
 property[2] = "Energie";
 unit[2] = new Array("J", "cal", "kcal", "eV");
-factor[2] = new Array(1, 4.184, 4184, 1.602176634e-19);
+factor[2] = new Array(1, 4.184, 4_184, 1.602_176_634e-19);
 
 property[3] = "Fläche";
 unit[3] = new Array("m2", "ha");
@@ -32,19 +42,19 @@ factor[4] = new Array(1, 1000000, 1000000000, 1000000000000, 60e-1);
 
 property[5] = "Geschwindigkeit";
 unit[5] = new Array("m/s", "km/h", "kn", "mi/h");
-factor[5] = new Array(1, 1 / 3.6, 0.514444444444444444e-1, 0.44704);
+factor[5] = new Array(1, 1 / 3.6, 0.514444444444444444e-1, 0.447_04);
 
 property[6] = "Masse";
 unit[6] = new Array("kg", "g", "u", "t", "lb");
-factor[6] = new Array(1, 1000, 1.660539066605e-27, 1000, 2.204623);
+factor[6] = new Array(1, 1000, 1.660_539_066_605e-27, 1000, 2.204_623);
 
 property[7] = "Winkel";
 unit[7] = new Array("RAD", "DEG", "min", "s");
 factor[7] = new Array(
   1,
-  0.017453292519943295,
-  0.0002908882086657216,
-  4.84813681109536e-6
+  0.017_453_292_519_943_295,
+  0.000_290_888_208_665_721_6,
+  4.848_136_811_095_36e-6
 );
 
 property[8] = "Volumen";
@@ -53,7 +63,7 @@ factor[8] = new Array(1, 0.1e-2, 1e-6, 0.1e-2, 1e-4, 1e-5, 1e-6);
 
 property[9] = "Zeit";
 unit[9] = new Array("s", "ms", "min", "h");
-factor[9] = new Array(1, 0.001, 60, 3600);
+factor[9] = new Array(1, 0.001, 60, 3_600);
 
 // ===========
 //  Functions
