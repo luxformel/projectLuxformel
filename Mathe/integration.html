@@ -23,7 +23,119 @@
     <div class="main-wrapper">
       <p id="printWatermark"></p>
       <h1>Intégration</h1>
-      <h2></h2>
+      <h2>Notation</h2>
+      <h3>Définition</h3>
+      <p>
+        $f$ est une fonction continue et positive sur un intervalle $[a ; b]$.
+        On appelle intégrale de $f$ sur $[a ; b]$ le nombre qui exprime l'aire,
+        en unités d'aire notée: u.a., du domaine $\mathscr{D}$ délimité par la
+        courbe $\mathscr{C}f$ de $f$, l'axe des abscisses et les droites
+        d'équations $x = a$ et $x = b$. <br />
+        On note:
+      </p>
+      $$ \int^{b}_{a} f\left( x\right) dx = A(\mathscr{D}) $$
+      <h3>Remarques</h3>
+      <ol>
+        <li>
+          <p>Dans la notation $ \int^{b}_{a} f\left( x\right) dx $</p>
+          <ul>
+            <li>
+              <p>$a$ et $b$ sont les bornes de l 'intégrale</p>
+            </li>
+            <li>
+              <p>
+                la variable x est dite « muette », autrement dit, elle
+                n'intervient pas dans le résultat et on peut noter
+                indifféremment :
+              </p>
+              $$ \int^b_a f(x)dx = \int^b_a f(t)dt$$
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            $ \int^b_a f(x)dx$ se lit «somme de $a$ à $b$ de $f(x)dx$» ou
+            «intégrale de $a$ à $b$ de $f(x)dx$»
+          </p>
+        </li>
+      </ol>
+      <h3>Théorème</h3>
+      <p>
+        Soit $f$ une fonction continue et positive sur un intervalle $[a; b]$.
+        La fonction $\Phi$ définie sur $[a ; b]$ par
+      </p>
+      $$ \Phi(x) = \int^x_a f(t)dt $$
+      <p>est dérivable sur $[a; b]$ et $\Phi^{\prime} = f$.</p>
+      <h2>Primitives d'une fonction continue</h2>
+      <h3>Définition</h3>
+      <p>
+        Soit $f$ une fonction continue sur un intervalle $I$. On appelle
+        primitive de $f$ sur $I$ toute fonction $F$ dérivable sur $I$ telle que
+        $F^{\prime} = f$.
+      </p>
+      <h3>Théorème</h3>
+      <p>
+        Soit $f$ une fonction continue sur un intervalle $I$ et soit $\Phi$ une
+        primitive de $f$ sur $I$. Alors $f$ admet une infinité de primitives sur
+        $I$ qui sont toutes de la forme:
+      </p>
+      $$ F(x) = \Phi + C $$
+      <p>avec $C \in \mathbb{R}$</p>
+      <h3>Conséquences</h3>
+      <ol>
+        <li>
+          <p>
+            <u
+              >Calcul de l'intégrale d'une fonction $f$ continue et positive sur
+              $[a ; b]$</u
+            >
+          </p>
+          <p>Nous savons que la fonction $\Phi$ définie par</p>
+          $$ \Phi(x) = \int^x_a f(t)dt$$
+          <p>est une primitive de $f$ sur $[a ; b]$.</p>
+          <p>
+            On peut calculer l'intégrale $\int^a_b f(t)dt$ , si on connaît une
+            primitive quelconque $F$ de $f$. <br />
+            En effet, il existe une constante $C$ telle que pour tout $x\in
+            [a;b] : F(x) = \Phi(x) + C$ <br />
+            Ansi:
+          </p>
+          $$ F(a) = \Phi(a) + C $$ $$\Leftrightarrow F(a) = \int^a_a f(t)dt +
+          C$$ $$\Leftrightarrow F(a) = 0+ C$$ $$\Leftrightarrow F(a) = C$$
+          <p>De plus:</p>
+          $$ F(a) = \Phi(b) + C $$ $$\Leftrightarrow \Phi(b) = F(b) - C$$
+          $$\Leftrightarrow \Phi(b) = F(b) - F(a)$$
+          <p>Donc:</p>
+          $$ \int^b_af(t)dt = F(b) - F(a) $$
+        </li>
+        <li>
+          <p><u>Primitive avec condition initiale</u></p>
+          <p>
+            Si $f$ admet des primitives sur $I$, alors pour tout nombre $x_0$ de
+            $I$ et tout nombre $y_0$, il existe une primitive et une seule $F$
+            de $f$ qui vérifie la condition initiale $F(x_0) = y_0$.
+          </p>
+        </li>
+      </ol>
+      <h3>Théorème</h3>
+      <p>
+        Toute fonction continue sur un intervalle $I$ admet des primitives sur
+        $I$.
+      </p>
+      <h2>Calculs de primitives</h2>
+      <h3>Théorème</h3>
+      <p>
+        Si $F$ et $G$ sont des primitives respectivement des fonctions $f$ et
+        $g$ sur un intervalle $I$ et si $k$ est un nombre réel, alors
+      </p>
+      <ol>
+        <li>
+          <p>$F + G$ est une primitive de $f + g$ sur $I$</p>
+        </li>
+        <li>
+          <p>$kF$ est une primitive de $kf$ sur $I$.</p>
+        </li>
+      </ol>
     </div>
     <div class="scrollButton">
       <a href="#">Zeréck no uewen</a>
