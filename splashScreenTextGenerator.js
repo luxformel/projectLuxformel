@@ -169,7 +169,9 @@ var splashTexts = [
   "git commit innit?",
   "join us on github",
   "Oh So Magnanimous!",
-  "1/170",
+  "Going to 5D!",
+  "Rip Mix Burn",
+  "1/173",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
