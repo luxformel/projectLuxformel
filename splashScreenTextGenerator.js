@@ -171,7 +171,15 @@ var splashTexts = [
   "Oh So Magnanimous!",
   "Going to 5D!",
   "Rip Mix Burn",
-  "1/173",
+  "Wir kommen in frieden!",
+  "https://filedn.eu/&shy;lR5G6WKEMs8uYdor&shy;VcyFS6V/index.html",
+  "Jirrimirri!",
+  "DE BUTTEK FÄNKT U MAT DRÉIEN!",
+  "Chrom net Krom!",
+  "Sir Kamelott",
+  "sudo apt-get update",
+  "sudo apt-get upgrade",
+  "1/181",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
