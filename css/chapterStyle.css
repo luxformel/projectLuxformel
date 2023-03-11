@@ -157,7 +157,7 @@ button {
     display: inherit;
   }
   a {
-    color: var(--vampir);
+    color: black;
     text-decoration: none;
   }
   .scrollButton {

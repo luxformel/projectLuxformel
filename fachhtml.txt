@@ -1,12 +1,10 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de" dir="ltr">
-  
   <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-     <script src="../assets/insertChapterHTML.js"></script>
-         <script src="../assets/mathJax.js"></script>
+    <script src="../assets/insertChapterHTML.js"></script>
+    <script src="../assets/mathJax.js"></script>
 
     <script
       type="text/javascript"
@@ -21,7 +19,7 @@
     <title>TITLE</title>
   </head>
   <body>
-    <my-navigator></my-navigator>    
+    <my-navigator></my-navigator>
     <div class="main-wrapper">
       <p id="printWatermark"></p>
       <h1>h1Header</h1>
