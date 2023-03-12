@@ -152,9 +152,9 @@ var searchListArray = [
   },
   {
     id: 1013,
-    link: "Chemie/organischeChemie.html",
+    link: "Chemie/alkane.html",
     subject: "Chemie",
-    topic: "Organische Chemie",
+    topic: "Alkane",
     keyWords: [
       "homologe reihe",
       "kohlenwasserstoffe",
@@ -171,6 +171,20 @@ var searchListArray = [
       "alkan",
       "alkyl",
     ],
+  },
+  {
+    id: 1014,
+    link: "Chemie/cycloalkane.html",
+    subject: "Chemie",
+    topic: "Cycloalkane",
+    keyWords: [""],
+  },
+  {
+    id: 1015,
+    link: "Chemie/alkene.html",
+    subject: "Chemie",
+    topic: "Alkene",
+    keyWords: [""],
   },
   {
     id: 2000,
@@ -495,6 +509,20 @@ var searchListArray = [
     subject: "Elektrotechnik",
     topic: "Filterschaltungen",
     keyWords: ["hochpass", "tiefpass", "grenzfrequenz"],
+  },
+  {
+    id: 3015,
+    link: "Elektrotechnik/halbleiter.html",
+    subject: "Elektrotechnik",
+    topic: "Halbleiter",
+    keyWords: [
+      "loch",
+      "freies elektron",
+      "p material",
+      "n material",
+      "p-material",
+      "n-material",
+    ],
   },
   {
     id: 4000,

@@ -199,6 +199,11 @@ button {
   td {
     border: 1px solid black !important;
   }
+  .zeichnungen {
+    max-height: 5cm;
+    width: auto;
+    display: inline-block;
+  }
 }
 /*feedback nav tag*/
 /*Optimisatioun fir mini handy*/
