@@ -179,7 +179,10 @@ var splashTexts = [
   "Sir Kamelott",
   "sudo apt-get update",
   "sudo apt-get upgrade",
-  "1/181",
+  "Aria Math",
+  "Biome Forest",
+  "Java != JavaScript",
+  "1/184",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
