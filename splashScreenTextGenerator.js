@@ -182,7 +182,9 @@ var splashTexts = [
   "Aria Math",
   "Biome Forest",
   "Java != JavaScript",
-  "1/184",
+  "Bug fixes and improvements",
+  "",
+  "1/187",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
