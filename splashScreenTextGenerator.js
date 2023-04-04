@@ -75,7 +75,6 @@ var splashTexts = [
   "Ciao",
   "Salve",
   "Konnichiwa",
-  "Yā",
   "Anyoung haseyo",
   "Anyoung",
   "Asalaam alaikum",
@@ -86,7 +85,6 @@ var splashTexts = [
   "Hoi",
   "Yassas",
   "Yassou",
-  "Dzień dobry",
   "Witaj",
   "Selamat siang",
   "Halo",
@@ -210,8 +208,7 @@ var splashTexts = [
   "Java != JavaScript",
   "Bug fixes and improvements",
   "Formula Museum",
-  "hjfncsudhfhvgmpsi",
-  "1/214",
+  "1/210",
 ];
 function generateRandomText() {
   //console.log(splashTexts);

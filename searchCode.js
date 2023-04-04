@@ -187,6 +187,13 @@ var searchListArray = [
     keyWords: [""],
   },
   {
+    id: 1016,
+    link: "Chemie/alkohole.html",
+    subject: "Chemie",
+    topic: "Alkohole",
+    keyWords: [""],
+  },
+  {
     id: 2000,
     link: "Divers/alphabet.html",
     subject: "Divers",
