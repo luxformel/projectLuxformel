@@ -511,7 +511,7 @@ var searchListArray = [
     keyWords: ["hochpass", "tiefpass", "grenzfrequenz"],
   },
   {
-    id: 3015,
+    id: 3016,
     link: "Elektrotechnik/halbleiter.html",
     subject: "Elektrotechnik",
     topic: "Halbleiter",
@@ -1240,13 +1240,20 @@ var searchListArray = [
   },
   {
     id: 7002,
+    link: "Informatik/javaPromblemesTypes.html",
+    subject: "Informatik",
+    topic: "Java Problèmes Types",
+    keyWords: ["pgcd", "sort", "cgd", "trier"],
+  },
+  {
+    id: 7003,
     link: "Informatik/htmlBasics.html",
     subject: "Informatik",
     topic: "HTML Basics",
     keyWords: [""],
   },
   {
-    id: 7003,
+    id: 7004,
     link: "Informatik/htmlBasics.html",
     subject: "Informatik",
     topic: "CSS Basics",
