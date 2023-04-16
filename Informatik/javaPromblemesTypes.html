@@ -211,7 +211,7 @@ public class NombresAleatoire {
         </div>
       </div>
 
-      <h2>Trouver un élément dans un liste</h2>
+      <h2>Trouver un élément dans une liste</h2>
       <div class="code-container">
         <div class="code-wrapper">
           <pre>
@@ -280,6 +280,93 @@ public int findFirst(String pNeedle) {
         i++;
     }
     return result;
+}
+      </code>
+        </pre>
+        </div>
+      </div>
+
+      <h2>Trouver le maximum dans une liste</h2>
+
+      <div class="code-container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="language-java">
+public int getMax() {
+    if (alListOfNumbers.size() > 0) {
+        int max = alListOfNumbers.get(0);
+          int current;
+
+            for (int i = 1; i < alListOfNumbers.size(); i++) {
+                current = alListOfNumbers.get(i);
+                if (max < current) {
+                    max = current;
+                }
+            }
+
+        return max;
+    } else {
+        return -1;
+    }
+}
+      </code>
+        </pre>
+        </div>
+      </div>
+
+      <div class="code-container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="language-java">
+public int getMin() {
+    if (alListOfNumbers.size() > 0) {
+        int min = alListOfNumbers.get(0);
+          int current;
+
+            for (int i = 1; i < alListOfNumbers.size(); i++) {
+                current = alListOfNumbers.get(i);
+                if (min > alListOfNumbers.size current) {
+                    min = current;
+                }
+            }
+
+        return max;
+    } else {
+        return -1;
+    }
+}
+      </code>
+        </pre>
+        </div>
+      </div>
+
+      <h2>Calculer la somme des nombres d'une Liste</h2>
+      <div class="code-container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="language-java">
+public int getSum() {
+    int sum = 0;
+    for (int i = 0; i < alListOfNumbers.size(); i++) {
+        sum = sum + alListOfNumbers.get(i);
+    }
+    return sum;
+}
+      </code>
+        </pre>
+        </div>
+      </div>
+
+      <div class="code-container">
+        <div class="code-wrapper">
+          <pre>
+            <code id="code" class="language-java">
+public double getAverage() {
+    if (alMarks.size()==0)
+    //La méthode retourne 0 si la liste est vide
+       return 0;
+    else 
+       return (double) getSum() / alListOfNumbers.size();
 }
       </code>
         </pre>

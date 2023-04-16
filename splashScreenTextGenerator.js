@@ -208,7 +208,9 @@ var splashTexts = [
   "Java != JavaScript",
   "Bug fixes and improvements",
   "Formula Museum",
-  "1/210",
+  "Learn to Code",
+  "self development!",
+  "1/212",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
