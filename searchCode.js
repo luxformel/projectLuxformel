@@ -201,6 +201,27 @@ var searchListArray = [
     ],
   },
   {
+    id: 1017,
+    link: "Chemie/aldehydeUndKetone.html",
+    subject: "Chemie",
+    topic: "Aldehyde und Ketone",
+    keyWords: ["carbonylverbindungen", "carboxygruppe", "silberspiegelprobe"],
+  },
+  {
+    id: 1018,
+    link: "Chemie/carbonsaueren.html",
+    subject: "Chemie",
+    topic: "Carbonsäuren",
+    keyWords: [
+      "carboxygruppe",
+      "hydroxygruppe",
+      "ameisensäure",
+      "essigsäure",
+      "propionsäure",
+      "buttersäure",
+    ],
+  },
+  {
     id: 2000,
     link: "Divers/alphabet.html",
     subject: "Divers",
