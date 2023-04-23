@@ -210,7 +210,10 @@ var splashTexts = [
   "Formula Museum",
   "Learn to Code",
   "self development!",
-  "1/212",
+  "Booyakasha!",
+  "Boom Boom check the mofo room!",
+  "very nice, i like!",
+  "1/215",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
