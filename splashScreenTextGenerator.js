@@ -213,7 +213,11 @@ var splashTexts = [
   "Booyakasha!",
   "Boom Boom check the mofo room!",
   "very nice, i like!",
-  "1/215",
+  "static site?",
+  "Bird up!",
+  "We'll Be Right Back!",
+  "Why did I move here? I Guess it was the weather.",
+  "1/219",
 ];
 function generateRandomText() {
   //console.log(splashTexts);

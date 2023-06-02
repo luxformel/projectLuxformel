@@ -1342,6 +1342,27 @@ var searchListArray = [
     keyWords: [""],
   },
   {
+    id: 6007,
+    link: "Technologie/luftschadstoffe.html",
+    subject: "Technologie",
+    topic: "Luftschadstoffe",
+    keyWords: [""],
+  },
+  {
+    id: 6008,
+    link: "Technologie/treibhauseffekt.html",
+    subject: "Technologie",
+    topic: "Treibhauseffekt",
+    keyWords: [""],
+  },
+  {
+    id: 6008,
+    link: "Technologie/energieeffizienz.html",
+    subject: "Technologie",
+    topic: "Energieeffizienz",
+    keyWords: [""],
+  },
+  {
     id: 7000,
     link: "Informatik/javaBasics.html",
     subject: "Informatik",

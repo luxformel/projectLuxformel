@@ -156,7 +156,7 @@ a:hover {
 
 footer {
   z-index: -1000;
-  position: relative;
+  position: fixed;
   bottom: 0;
 }
 
