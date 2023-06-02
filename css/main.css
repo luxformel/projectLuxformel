@@ -19,7 +19,7 @@ body {
   min-height: 100%;
   padding-bottom: 100px;
 }
-/*Miscellanious*/
+/*Miscellaneous*/
 hr {
   color: var(--black);
   border-top: 2px solid;
@@ -156,7 +156,7 @@ a:hover {
 
 footer {
   z-index: -1000;
-  position: fixed;
+  position: relative;
   bottom: 0;
 }
 
