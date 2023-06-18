@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script src="../assets/insertChapterHTML.js"></script>
+    <script src="../assets/mathJax.js"></script>
+
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script defer src="../print.js"></script>
+    <script async src="../Themes JavaScript/themeChapter.js"></script>
+
+    <!-- Equation code -->
+
+    <script defer src="equation.js"></script>
+    <link rel="stylesheet" href="equation.css" />
+
+    <title>Equations du deuxieme degrée</title>
+  </head>
+  <body>
+    <my-navigator></my-navigator>
+    <div class="main-wrapper">
+      <p id="printWatermark"></p>
+      <h1>Fonctions de deuxieme degrée</h1>
+      <p>Erklärende Saatz</p>
+      <h2>Paramètres</h2>
+      <form action="">
+        <label for="coefficient">Coefficient maximale</label> <br />
+        <input type="coefficient" id="coefficient" value="10" />
+        <br />
+        <br />
+        <label for="number">Nombres des équations a générer</label> <br />
+        <input type="number" id="number" value="20" />
+        <br />
+        <br />
+        <input type="checkbox" id="fractions" />
+        <label for="fractions">Contient des fractions</label>
+        <br />
+        <input type="checkbox" id="negativ" />
+        <label for="negativ">Contient des nombres négative</label>
+        <br />
+        <input type="checkbox" id="complexe" />
+        <label for="complexe">Contient des solutions complexes</label>
+        <br />
+        <input
+          type="button"
+          value="Générer"
+          id="generateButton"
+          onclick="generateListOfEquations()"
+        />
+        <input
+          type="button"
+          value="Solutions"
+          id="generateButton"
+          onclick="displaySolution()"
+        />
+        <input
+          type="button"
+          value="Effacer"
+          id="generateButton"
+          onclick="reloadWindow()"
+        />
+        <br />
+        <input
+          type="radio"
+          id="enonceRadio"
+          name="displaySelection"
+          value="Énonce"
+        />
+        <label for="enonceRadio">Énonce</label>
+        <br />
+        <input
+          type="radio"
+          id="solutionsRadio"
+          name="displaySelection"
+          value="Solutions"
+        />
+        <label for="solutionsRadio">Solutions</label>
+        <br />
+        <input
+          type="radio"
+          id="enonceEtSolutionsRadio"
+          name="displaySelection"
+          value="Énonce et solutions"
+          checked
+        />
+        <label for="enonceEtSolutionsRadio">Énonce et solutions</label>
+      </form>
+      <hr />
+      <div id="test" class="enonce">
+        <h2>Énoncé</h2>
+        <div id="latexContainer"></div>
+
+        <ol id="orderedList"></ol>
+      </div>
+      <div class="solutions">
+        <h2>Solutions</h2>
+        <ol id="solutionsList"></ol>
+      </div>
+    </div>
+    <div class="scrollButton">
+      <a href="#">Zeréck no uewen</a>
+    </div>
+  </body>
+</html>
