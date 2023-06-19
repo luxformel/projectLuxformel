@@ -1419,12 +1419,10 @@ const searchInput = document.querySelector("[data-search]");
 //search cards on keyInput
 searchInput.addEventListener("input", (e) => {
   let value = e.target.value.toLowerCase();
-  //console.log(value);
   for (var i = 0; i < searchListArray.length; i++) {
     var user = searchListArray[i];
     var isVisible;
     var keyW = searchListArray[i].keyWords;
-    //console.log(keyW);
 
     var containsKeyWord = 0;
     //searches keywords if any are matching input var containsKeyWord would be > 0
@@ -1441,11 +1439,7 @@ searchInput.addEventListener("input", (e) => {
     ) {
       var tempId = user.id;
       isVisible = true;
-      //document.getElementById("tempId").parentNode.style.display = "none";
-      //document.getElementById("tempId").style.display = "none";
-      //console.log(tempId);
-      //console.log(document.getElementById(tempId));
-      //document.getElementById(tempId).toggleAttribute("hide");
+
       document
         .getElementById(tempId)
         .classList.toggle("isNotVisible", isVisible);
