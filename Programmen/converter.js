@@ -42,7 +42,7 @@ factor[6] = new Array(1, 1 / 3.6, 0.514444444444444444e-1, 0.447_04);
 
 property[7] = "Masse";
 unit[7] = new Array("kg", "g", "u", "t", "lb");
-factor[7] = new Array(1, 1000, 1.660_539_066_605e-27, 1000, 2.204_623);
+factor[7] = new Array(1, 1000, 1.660_539_066_605e-27, 1000, 0.4535922922);
 
 property[8] = "Winkel";
 unit[8] = new Array("RAD", "DEG", "min", "s");
