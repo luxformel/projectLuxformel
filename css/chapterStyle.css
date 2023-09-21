@@ -10,6 +10,10 @@
   margin: 0;
   font-size: 2rem !important;
 }
+/*paragraph styling*/
+p {
+  max-width: 80ch;
+}
 /*Tables*/
 table,
 th,
