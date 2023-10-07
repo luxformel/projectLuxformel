@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script src="../assets/insertChapterHTML.js"></script>
+    <script src="../assets/mathJax.js"></script>
+
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script defer src="../feedbackPopup.js"></script>
+    <script defer src="../print.js"></script>
+    <script async src="../Themes JavaScript/themeChapter.js"></script>
+
+    <title>Vecteurs</title>
+  </head>
+  <body>
+    <my-navigator></my-navigator>
+    <div class="main-wrapper">
+      <p id="printWatermark"></p>
+      <h1>Vecteurs</h1>
+      <h2>Vecteur</h2>
+      <h3>Définition</h3>
+      <ol>
+        <li>
+          <p>Un vecteur se définit par:</p>
+          <ul>
+            <li>
+              <p><u>un scalaire:</u></p>
+              <p>longueur, norme, amplitude, magnitude, module</p>
+            </li>
+            <li>
+              <p><u>un sens:</u></p>
+              <p>vecteur unitaire de longueur $1$</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            Un vecteur peut s'exprimer de manière unique dans une base de
+            l'espace vectoriel.
+          </p>
+          <p>
+            $\overrightarrow{v}$ s'écrit alors comme une combinaison linéaire de
+            $\overrightarrow{e_1}$ et $\overrightarrow{e_2}$.
+          </p>
+          $$ \exists a_1 ,\ a_2 \in \mathbb{R} \mid \overrightarrow{v} = a_1
+          \overrightarrow{e_1} + a_2 \overrightarrow{e_2} $$
+          <p>
+            $a_1$ et $a_2$ sont alors les composantes de $\overrightarrow{v}$
+            dans la base $\left( \overrightarrow{e_1}, \overrightarrow{e_2}
+            \right)$
+          </p>
+        </li>
+      </ol>
+      <h2>Norme d'un vecteur</h2>
+      <h3>Définition</h3>
+      <p>
+        Soit $\overrightarrow{a}$ un vecteur, tel que <br />
+        $ \overrightarrow{a} = \binom{a_{1}}{a_{2}} $ dans une base $\left( e_1,
+        e_2 \right)$, alors $ \Vert \overrightarrow{a} \Vert = \sqrt{a_1^2 +
+        a_2^2} $
+      </p>
+      <h3>Algébriquement</h3>
+      $$ \Vert \overrightarrow{b} \Vert = \left\Vert \binom{ \lambda
+      a_{1}}{\lambda a_{2}} \right\Vert = \sqrt{\left( \lambda a_1 \right)^2 +
+      \left( \lambda a_2 \right)^2} $$ $$\Leftrightarrow \Vert
+      \overrightarrow{b} \Vert = \sqrt{\left( \lambda^2 a_1^2 \right) + \left(
+      \lambda^2 a_2^2 \right)} $$ $$\Leftrightarrow \Vert \overrightarrow{b}
+      \Vert = \sqrt{ \lambda^2 \left( a_1^2 + a_2^2 \right)} $$
+      $$\Leftrightarrow \Vert \overrightarrow{b} \Vert =\sqrt{\lambda^2} \sqrt{
+      a_1^2 + a_2^2 } $$ $$\Leftrightarrow \Vert \overrightarrow{b} \Vert =
+      \begin{cases}\lambda \left\Vert \overrightarrow{a} \right\Vert &si\
+      \lambda >0\ \Rightarrow \ \left\Vert \overrightarrow{a} \right\Vert
+      =\left| \lambda \right| \left\Vert \overrightarrow{b} \right\Vert \\
+      -\lambda \left\Vert \overrightarrow{a} \right\Vert &si\ \lambda < 0 \end
+      {cases} $$
+
+      <h2>Produit scalaire</h2>
+
+      <h2>Produit vectoriel</h2>
+      <h3>Définition</h3>
+      <p>
+        Soient deux vecteurs $\overrightarrow{a}$ et $\overrightarrow{b}$, on
+        définit le produit vectoriel de $\overrightarrow{a}$ par
+        $\overrightarrow{b}$ comme le vecteur:
+      </p>
+      $$ \overrightarrow{i} = \overrightarrow{a} \wedge \overrightarrow{b} =
+      \overrightarrow{a} \times \overrightarrow{b} $$
+      <p>tel que</p>
+      <ol>
+        <li>
+          $$ \overrightarrow{c} \cdot \overrightarrow{a} = 0 $$
+          <p>et</p>
+          $$ \overrightarrow{c} \cdot \overrightarrow{b} = 0 $$
+        </li>
+        <li>
+          $$ \Vert \overrightarrow{c} \Vert =\Vert \overrightarrow{a} \Vert
+          \cdot \Vert \overrightarrow{b} \Vert \cdot \sin \left(
+          \overrightarrow{a} ,\overrightarrow{b} \right) $$
+        </li>
+        <li>
+          $ \left( \overrightarrow{a}, \overrightarrow{b}, \overrightarrow{c}
+          \right) $ forme un système de coordonnées direct
+        </li>
+      </ol>
+      <h3>Propriétés</h3>
+      <p>
+        $\overrightarrow{a}, \overrightarrow{b}, \overrightarrow{c}$ sont des
+        vecteurs de $\mathbb{R}^3, \lambda \in \mathbb{R}$
+      </p>
+      <h3>Distributivité</h3>
+      <p>Distributivité par rapport à l'addition vectoriel:</p>
+      <ul>
+        <li>
+          $$ \overrightarrow{a} \times \left( \overrightarrow{b} +
+          \overrightarrow{c} \right) = \overrightarrow{a} \times
+          \overrightarrow{b} + \overrightarrow{a} \times \overrightarrow{c} $$
+        </li>
+        <li>
+          $$\left( \overrightarrow{a} + \overrightarrow{b} \right) \times
+          \overrightarrow{c} = \overrightarrow{a} \times \overrightarrow{c} +
+          \overrightarrow{b} \times \overrightarrow{c} $$
+        </li>
+      </ul>
+      <h3>Asymmétrie</h3>
+      $$ \overrightarrow{a} \times \overrightarrow{b} = - \overrightarrow{b}
+      \times \overrightarrow{a}$$
+      <h3>Multiplication d'un scalaire</h3>
+      $$ \lambda \overrightarrow{a} \times \overrightarrow{b} = \left(\lambda
+      \overrightarrow{a} \right) \times \overrightarrow{b} = \overrightarrow{a}
+      \times \left( \lambda \overrightarrow{b} \right) $$
+    </div>
+    <h2>Produit vectoriel nul</h2>
+    <p>Le produit vectoriel est nul si et seulement si:</p>
+    $$ \overrightarrow{a} \times \overrightarrow{b} = \overrightarrow{0} $$ $$
+    \Leftrightarrow \overrightarrow{a} = \overrightarrow{0}\ ou\
+    \overrightarrow{b} = \overrightarrow{0}\ ou\ \sin \left( \overrightarrow{a},
+    \overrightarrow{b} \right) = 0$$
+    <p>
+      Pour: $\sin \left( \overrightarrow{a}, \overrightarrow{b} \right) = 0$
+    </p>
+    $$ \sin \left( \varphi \right) = 0 $$ $$ \Leftrightarrow \varphi \equiv 0
+    \left[ \pi \right] $$ $$ \exists k \in \mathbb{Z} \mid \varphi = 0 + k\cdot
+    \pi $$
+    <div class="scrollButton">
+      <a href="#">Zeréck no uewen</a>
+    </div>
+  </body>
+</html>

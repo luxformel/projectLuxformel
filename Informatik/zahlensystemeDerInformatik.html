@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script src="../assets/insertChapterHTML.js"></script>
+    <script src="../assets/mathJax.js"></script>
+
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script defer src="../feedbackPopup.js"></script>
+    <script defer src="../print.js"></script>
+    <script async src="../Themes JavaScript/themeChapter.js"></script>
+
+    <title>Zahlensysteme der Informatik</title>
+  </head>
+  <body>
+    <my-navigator></my-navigator>
+    <div class="main-wrapper">
+      <p id="printWatermark"></p>
+      <h1>Zahlensysteme der Informatik</h1>
+      <h2></h2>
+      <ul>
+        <li>
+          <p>
+            <u>Natürliche Zahl:</u>
+          </p>
+          <p>
+            Die Darstellung einer natürlichen Zahl $z$, mit einer dazugehörigen
+            Basis $B$, wird durch folgende Summe definiert.
+          </p>
+          $$ z = \sum^{n}_{i=0} z_{i}\cdot B^{i} $$
+          <p>wobei:</p>
+          $$ z = z_{n}\cdot z_{n-1}\cdot ...z_{1}\cdot z_{0}\ \left( z_{i}\in
+          \left\{ 0,...,B-1\right\} \right) $$
+        </li>
+        <li>
+          <p>
+            <u>Gebrochene Zahl:</u>
+          </p>
+          <p>
+            Die Darstellung einer gebrochene Zahl $z$, mit einer dazugehörigen
+            Basis $B$, wird durch folgende Summe definiert.
+          </p>
+          $$ z = \sum^{n}_{i=0} z_{i}\cdot B^{i} $$
+        </li>
+      </ul>
+      <h2>Relevante Zahlensysteme</h2>
+      <p>
+        Es gibt einige häufig benutzte Zahlensysteme in der Informatik, die hier
+        nach aufsteigender Basis geordnet sind:
+      </p>
+      <ul>
+        <li>
+          <p>Binärsystem, Dualsystem</p>
+          $$ B=2$$
+        </li>
+        <li>
+          <p>Oktalsystem</p>
+          $$ B=8$$
+        </li>
+        <li>
+          <p>Dezimalsystem</p>
+          $$ B=10$$
+        </li>
+        <li>
+          <p>Hexadezimalsystem</p>
+          $$ B=16$$
+        </li>
+      </ul>
+      <p>
+        Das jedoch allerwichtigste Zahlensystem in der Informatik ist das
+        Binärsystem.
+      </p>
+      <h2>Basiswechsel</h2>
+      <p>Ein Basiswechsel ist das Wechseln der Basis einer Zahl.</p>
+    </div>
+    <div class="scrollButton">
+      <a href="#">Zeréck no uewen</a>
+    </div>
+  </body>
+</html>
