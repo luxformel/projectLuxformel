@@ -81,7 +81,92 @@
       {cases} $$
 
       <h2>Produit scalaire</h2>
-
+      <h3>Définition</h3>
+      <p>
+        Soient $\overrightarrow{u}$ et $\overrightarrow{v}$ deux vecteurs non
+        nuls du plan. On appelle produit scalaire de $\overrightarrow{u}$ et
+        $\overrightarrow{v}$ le nombre réel noté $\overrightarrow{u} \cdot
+        \overrightarrow{v}$ défini par :
+      </p>
+      $$ \overrightarrow{u} \cdot \overrightarrow{v} = \Vert \overrightarrow{u}
+      \Vert \cdot \Vert \overrightarrow{v} \Vert \cdot \cos \left(
+      \overrightarrow{u}, \overrightarrow{v} \right) $$
+      <h3>Propriété</h3>
+      <p>
+        Deux vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$ sont
+        orthogonaux si et seulement si:
+      </p>
+      $$ \overrightarrow{u} \cdot \overrightarrow{v} = 0 $$
+      <h3>Démonstration</h3>
+      <p>
+        Si l'un des vecteurs est nul le produit scalaire est nul et la propriété
+        est vraie puisque, par convention, le vecteur nul est orthogonal à tout
+        vecteur du plan. <br />
+        Si les deux vecteurs sont non nuls, leurs normes sont non nulles donc :
+      </p>
+      $$ \overrightarrow{u} \cdot \overrightarrow{v} = 0 $$ $$ \Leftrightarrow
+      \Vert \overrightarrow{u} \Vert \cdot \Vert \overrightarrow{v} \Vert \cdot
+      \cos \left( \overrightarrow{u}, \overrightarrow{v} \right) = 0 $$ $$
+      \Leftrightarrow \cos \left( \overrightarrow{u}, \overrightarrow{v} \right)
+      = 0 $$
+      <p>
+        On obtient donc que $\overrightarrow{u}$ et $\overrightarrow{v}$ sont
+        orthogonaux.
+      </p>
+      <p>cqfd.</p>
+      <h3>Propriété</h3>
+      <p>
+        Pour tous vecteurs $\overrightarrow{u}$, $\overrightarrow{v}$ et
+        $\overrightarrow{w}$ et tout réel $k$:
+      </p>
+      <ul>
+        <li>
+          <p>
+            $\left( k \cdot \overrightarrow{u} \right) \cdot \overrightarrow{v}
+            = k \left( \overrightarrow{u} \cdot \overrightarrow{v} \right)$
+          </p>
+        </li>
+        <li>
+          <p>
+            $\overrightarrow{u} \cdot \left( \overrightarrow{v} +
+            \overrightarrow{w} \right) = \overrightarrow{u} \cdot
+            \overrightarrow{v} + \overrightarrow{u} \cdot \overrightarrow{w} $
+          </p>
+        </li>
+      </ul>
+      <h3>Propriété</h3>
+      <p>
+        Soit $\overrightarrow{u}$ un vecteur du plan. Le carré scalaire de
+        $\overrightarrow{u}$ est le réel positif ou nul:
+      </p>
+      $$ \left( \overrightarrow{u} \right)^2 = \overrightarrow{u} \cdot
+      \overrightarrow{u} = \Vert \overrightarrow{u} \Vert^2 $$
+      <h3>Démonstration</h3>
+      $$ \overrightarrow{u} \cdot \overrightarrow{u} = \Vert \overrightarrow{u}
+      \Vert \cdot \Vert \overrightarrow{u} \Vert \cdot \underbrace{\cos \left(
+      \overrightarrow{u}, \overrightarrow{u} \right)}_{=1} $$ $$ \Leftrightarrow
+      \overrightarrow{u} \cdot \overrightarrow{u} = \Vert \overrightarrow{u}
+      \Vert^2 $$
+      <p>cqfd.</p>
+      <h3>Théorème</h3>
+      <p>Pour tous vecteurs $\overrightarrow{u}$ et $\overrightarrow{v}$:</p>
+      $$ \overrightarrow{u} \cdot \overrightarrow{v} = \frac{1}{2} \cdot \left(
+      \Vert \overrightarrow{u} + \overrightarrow{v} \Vert^2 - \Vert
+      \overrightarrow{u} \Vert^2 - \Vert \overrightarrow{v} \Vert^2 \right) $$
+      <h3>Démonstration</h3>
+      $$ \Vert \overrightarrow{u} + \overrightarrow{v} \Vert^2 =
+      \left(\overrightarrow{u} \right) ^2 + 2 \cdot \left( \overrightarrow{u}
+      \cdot \overrightarrow{v} \right) + \left(\overrightarrow{v}\right) ^2$$ $$
+      = \Vert \overrightarrow{u} \Vert^2 + 2 \cdot \left( \overrightarrow{u}
+      \cdot \overrightarrow{v} \right) + \Vert \overrightarrow{v} \Vert^2 $$
+      <p>Par conséquent:</p>
+      $$ \Vert \overrightarrow{u} + \overrightarrow{v} \Vert^2 = \Vert
+      \overrightarrow{u} \Vert^2 + 2 \cdot \left( \overrightarrow{u} \cdot
+      \overrightarrow{v} \right) + \Vert \overrightarrow{v} \Vert^2 $$ $$
+      \Leftrightarrow \overrightarrow{u} \cdot \overrightarrow{v} = \frac{1}{2}
+      \cdot \left( \Vert \overrightarrow{u} + \overrightarrow{v} \Vert^2 - \Vert
+      \overrightarrow{u} \Vert^2 - \Vert \overrightarrow{v} \Vert^2 \right) $$
+      <p>cqfd.</p>
       <h2>Produit vectoriel</h2>
       <h3>Définition</h3>
       <p>

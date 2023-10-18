@@ -271,7 +271,10 @@ var splashTexts = [
   "Ich beisse den Hund!",
   "Die Tafel spielt Klavier.",
   "Do you have issues?!",
-  "1/272",
+  "Wat der Jomer!",
+  "vu Pontius op Pilatus",
+  "vun Hippches op Hapches",
+  "1/276",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
