@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Chart Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <canvas id="myChart" width="400" height="400"></canvas>
+    <script>
+      // Define your function here
+      function myFunction(x) {
+        return x * x;
+      }
+
+      // Generate data points using the function
+      var dataPoints = [];
+      for (var i = 0; i < 10; i++) {
+        dataPoints.push({
+          x: i,
+          y: myFunction(i),
+        });
+      }
+
+      // Plot the graph
+      var ctx = document.getElementById("myChart").getContext("2d");
+      var myChart = new Chart(ctx, {
+        type: "line",
+        data: {
+          datasets: [
+            {
+              label: "My Function",
+              data: dataPoints,
+              borderColor: "rgb(75, 192, 192)",
+              fill: false,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            x: {
+              type: "linear",
+              position: "bottom",
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
