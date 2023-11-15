@@ -913,6 +913,13 @@ var searchListArray = [
     keyWords: [""],
   },
   {
+    id: 4024,
+    link: "Mathe/tableauDesPrimitivesDeFonctions.html",
+    subject: "Mathe",
+    topic: "Tableau des primitives de fonctions",
+    keyWords: [""],
+  },
+  {
     id: 5000,
     link: "Physik/arbeitEnergieLeistung.html",
     subject: "Physik",
