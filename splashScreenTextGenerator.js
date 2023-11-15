@@ -290,7 +290,7 @@ var splashTexts = [
   "wasted",
   "heyoooo",
   "You've gone incognito",
-  "1/291",
+  "1/292",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
