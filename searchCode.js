@@ -1243,6 +1243,13 @@ var searchListArray = [
     keyWords: [""],
   },
   {
+    id: 5020,
+    link: "Physik/sonnensystemTabelle.html",
+    subject: "Physik",
+    topic: "Sonnensytem Tabelle",
+    keyWords: [""],
+  },
+  {
     id: 6000,
     link: "Technologie/werkstoffeigenschaften.html",
     subject: "Technologie",
@@ -1474,7 +1481,7 @@ var searchListArray = [
     id: 7009,
     link: "Informatik/boolscheAlgebra.html",
     subject: "Informatik",
-    topic: "Bool'sche Algebras",
+    topic: "Bool'sche Algebra",
     keyWords: [""],
   },
   {

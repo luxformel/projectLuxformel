@@ -55,7 +55,6 @@ td {
 .xScrollable {
   overflow-x: scroll;
   width: 100vw;
-  max-width: 20cm;
 }
 .tableLines > tr,
 td {
