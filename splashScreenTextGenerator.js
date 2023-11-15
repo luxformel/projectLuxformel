@@ -311,7 +311,8 @@ var splashTexts = [
   "reflection, practice, spacing",
   "The school of life",
   "Egg nog",
-  "1/312",
+  "Please no slides",
+  "1/314",
 ];
 function generateRandomText() {
   //console.log(splashTexts);

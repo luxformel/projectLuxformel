@@ -913,7 +913,7 @@ var searchListArray = [
     keyWords: [""],
   },
   {
-    id: 4024,
+    id: 4025,
     link: "Mathe/tableauDesPrimitivesDeFonctions.html",
     subject: "Mathe",
     topic: "Tableau des primitives de fonctions",
@@ -1384,7 +1384,7 @@ var searchListArray = [
     keyWords: [""],
   },
   {
-    id: 6008,
+    id: 6009,
     link: "Technologie/energieeffizienz.html",
     subject: "Technologie",
     topic: "Energieeffizienz",
@@ -1461,6 +1461,27 @@ var searchListArray = [
     link: "Informatik/zahlensystemDerInformatik.html",
     subject: "Informatik",
     topic: "Zahlensysteme der Informatik",
+    keyWords: [""],
+  },
+  {
+    id: 7008,
+    link: "Informatik/codes.html",
+    subject: "Informatik",
+    topic: "Codes",
+    keyWords: [""],
+  },
+  {
+    id: 7009,
+    link: "Informatik/boolscheAlgebra.html",
+    subject: "Informatik",
+    topic: "Bool'sche Algebras",
+    keyWords: [""],
+  },
+  {
+    id: 8000,
+    link: "Messtechnik/messtechnik.html",
+    subject: "Messtechnik",
+    topic: "Messtechnik",
     keyWords: [""],
   },
 ];
