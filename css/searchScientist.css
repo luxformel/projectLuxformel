@@ -1,0 +1,78 @@
+.main-wrapper {
+  padding: 50px;
+  max-width: none !important;
+}
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+input {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.resource-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 80ch));
+  gap: 0.25rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border: 1px solid var(--black);
+  padding: 0.5rem;
+  background-color: var(--d3);
+}
+
+.card > .subject {
+  margin-bottom: 0.25rem;
+}
+
+.card > .topic {
+  font-size: 0.6rem;
+  color: var(--sixColor);
+}
+
+.hide {
+  display: none;
+}
+
+h5 {
+  line-height: 1.5rem;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  padding-bottom: 5px;
+  color: var(--search-font);
+  text-decoration: underline;
+}
+h6 {
+  line-height: 1.5rem;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  font-style: italic;
+  padding-bottom: 5px;
+  color: var(--search-font);
+  opacity: 0.7;
+}
+.searchCardLinks {
+  line-height: 1rem;
+  font-family: arial;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 16px;
+  opacity: 0.8;
+  color: var(--search-font);
+}
+a:hover {
+  color: var(--accentColor);
+  cursor: pointer;
+}
+
+.isNotVisible {
+  display: none;
+}
+label {
+  font-weight: bolder;
+  color: var(--black);
+}
