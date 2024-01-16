@@ -312,7 +312,18 @@ var splashTexts = [
   "The school of life",
   "Egg nog",
   "Please no slides",
-  "1/314",
+  "Once upon a time in a clearig in a magical forest...",
+  "Klimmbimm Entusiast",
+  "Life is contrary",
+  "Faal op eng Millioun!",
+  "The finals",
+  "In varietate concordia",
+  "Let the man cook!",
+  "Il faut écouter le docteur",
+  "There is nothing we can do",
+  "Better call Ahmad",
+  "Back when the air was still invisible an toothpaste was still white",
+  "1/325",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
