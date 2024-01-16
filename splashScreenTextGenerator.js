@@ -296,7 +296,7 @@ var splashTexts = [
   "The science of successful learning",
   "make it stick!",
   "Epsilon delta",
-  "Luxformel Luxequation Luxthéorème",
+  "Luxformel Luxéquation Luxthéorème",
   "Luxformel: Een eenzegen Zimlabum!",
   "Nemme Fisematenten...",
   "Baruch Spinoza",
@@ -312,7 +312,7 @@ var splashTexts = [
   "The school of life",
   "Egg nog",
   "Please no slides",
-  "Once upon a time in a clearig in a magical forest...",
+  "Once upon a time in a clearing in a magical forest...",
   "Klimmbimm Entusiast",
   "Life is contrary",
   "Faal op eng Millioun!",
@@ -323,7 +323,9 @@ var splashTexts = [
   "There is nothing we can do",
   "Better call Ahmad",
   "Back when the air was still invisible an toothpaste was still white",
-  "1/325",
+  "User? Do you know why you're here?",
+  "Bad luck I guess",
+  "1/327",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
