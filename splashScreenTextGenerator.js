@@ -325,7 +325,22 @@ var splashTexts = [
   "Back when the air was still invisible an toothpaste was still white",
   "User? Do you know why you're here?",
   "Bad luck I guess",
-  "1/327",
+  "Sischer, Siscer, Herr Makielski!",
+  "Ey Mann, isch werd' bekloppt, ey!",
+  "Alles für den Dackel, alles für den Club. Unser Leben für den Hund!",
+  "Wissen macht AH! AaaaaaaHHHHHHHHH",
+  "No clubbing, stepping, flinching",
+  "De Jang vun Detroit",
+  "Wat ee Steemetz Decolleté!",
+  "This is seven Dollars!?",
+  "Entspannen ist ein Vollzeitjob",
+  "Le monde est fou, croyez nous!",
+  "Moodle Jump",
+  "Crisis averted",
+  "Ich bin für regulierung, nicht für strangulierung",
+  "Can't Pay Take It Away!",
+  "Eigelb enthält mehr Eiweiß als Eiweiß",
+  "1/342",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
