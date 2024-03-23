@@ -23,7 +23,7 @@ td {
 }
 
 table {
-  min-width: 70%;
+  width: fit-content;
 }
 strong {
   font-size: 2rem;

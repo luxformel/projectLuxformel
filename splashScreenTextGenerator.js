@@ -340,7 +340,9 @@ var splashTexts = [
   "Ich bin für regulierung, nicht für strangulierung",
   "Can't Pay Take It Away!",
   "Eigelb enthält mehr Eiweiß als Eiweiß",
-  "1/342",
+  "De Sproochmates",
+  "Hasta la vista, Baby!",
+  "1/344",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
