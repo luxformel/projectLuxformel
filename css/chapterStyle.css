@@ -10,9 +10,20 @@
   margin: 0;
   font-size: 2rem !important;
 }
+.has-jax {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
 /*paragraph styling*/
 p {
   max-width: 80ch;
+}
+aside > p {
+  margin-left: 1rem;
+}
+aside {
+  border-left: 0.3rem solid black;
+  padding-left: 1rem;
 }
 /*Tables*/
 table,
@@ -23,7 +34,7 @@ td {
 }
 
 table {
-  width: fit-content;
+  max-width: fit-content;
 }
 strong {
   font-size: 2rem;
@@ -148,6 +159,8 @@ button {
     color: white !important;
     width: inherit;
     padding: 10px;
+    padding-top: none;
+    margin-top: none;
     padding-left: 1cm;
     padding-right: 0.1cm;
     background-image: none;
@@ -195,8 +208,13 @@ button {
   tr:nth-child(odd) > td {
     background-color: rgba(211, 211, 211, 0.316);
   }
+  /*adjustments to math jax*/
   .MTH-TEX {
     color: black !important;
+  }
+  .has-jax {
+    overflow-x: auto;
+    overflow-y: hidden;
   }
   table,
   th,

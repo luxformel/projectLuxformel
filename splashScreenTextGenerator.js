@@ -8,7 +8,7 @@ var splashTexts = [
   "Infoen zu Formelen aus Lëtzebuerg",
   "Play Games!",
   "formel.lu",
-  "Iwwer 20 000 Linne Codage!",
+  "Iwwer 25 000 Linne Codage!",
   "Hurrah Formelen",
   "5 Stäre Bewertung",
   "COOKIES!!!!",
@@ -328,7 +328,7 @@ var splashTexts = [
   "Sischer, Siscer, Herr Makielski!",
   "Ey Mann, isch werd' bekloppt, ey!",
   "Alles für den Dackel, alles für den Club. Unser Leben für den Hund!",
-  "Wissen macht AH! AaaaaaaHHHHHHHHH",
+  "Wissen macht AH! Aaaa&shy;aaaHHHHHHHHH",
   "No clubbing, stepping, flinching",
   "De Jang vun Detroit",
   "Wat ee Steemetz Decolleté!",
@@ -342,7 +342,11 @@ var splashTexts = [
   "Eigelb enthält mehr Eiweiß als Eiweiß",
   "De Sproochmates",
   "Hasta la vista, Baby!",
-  "1/344",
+  "De Kropemann...",
+  "D'Klierf zu Clierf!",
+  "Luxemburgistik",
+  "Zënter éiweg an dräi Deeg",
+  "1/348",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
