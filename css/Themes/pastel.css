@@ -1,0 +1,24 @@
+/*root*/
+:root {
+  --vampir: #1b1010;
+  --hacker: green;
+  --scale-factor: 1;
+  --darker-greyColor: rgb(205, 141, 176);
+  --darkBackgroundColor: rgb(248, 145, 161);
+  --white: #ffffff;
+  --th-bgColor: #cbccf7;
+  --accentColor: #eca3ed;
+  --black: rgb(41, 38, 38);
+  --background-color: rgb(220, 251, 252);
+  --sixColor: #5d684f;
+  --oneEColor: #000000;
+  --bg: #78bdcbdb;
+  --d3: #d1f1ed;
+  --odd-th-color: rgba(190, 245, 244, 0.316);
+  --search-font: rgb(56, 39, 39);
+  --temp: rgb(var(255 * random()), 255 * random(), 255 * random());
+}
+/*MathJax Config*/
+.MJX-TEX {
+  color: #000 !important;
+}

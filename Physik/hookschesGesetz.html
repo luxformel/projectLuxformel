@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="author" content="Niederkorn Damon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
     <script src="../assets/insertChapterHTML.js"></script>
+    <script src="../assets/mathJax.js"></script>
+
     <script
       type="text/javascript"
       id="MathJax-script"
@@ -15,27 +16,35 @@
     <script defer src="../print.js"></script>
     <script async src="../Themes JavaScript/themeChapter.js"></script>
 
-    <title>Ohmsches Gesetz</title>
+    <title>Hook'sches Gesetz</title>
   </head>
   <body>
     <my-navigator></my-navigator>
     <div class="main-wrapper">
       <p id="printWatermark"></p>
-      <h1>Ohmsches Gesetz</h1>
-      <h2>Ohmsche Gesetz</h2>
+      <h1>Hook'sches Gesetz</h1>
+      <h2>Hook'sches Gesetz</h2>
       <h3>Definition</h3>
       <p>
-        Der Strom in einem Bauteil ist proportional zur angelegten Spannung und
-        umgekehrt proportional zum Widerstand des Bauteils.
+        Das Gesetz von Hook beschreibt die elastische Verformung von
+        Festkörpern, wenn deren Verformung proportional zur einwirkenden
+        Belastung ist.
+      </p>
+      <h3>Bemerkung</h3>
+      <p>Oft wird beim hook'schen Gesetz von Federn geredet.</p>
+      <h2>Federkonstante</h2>
+      <h3>Definition</h3>
+      <p>
+        Die Federkonstante $D$ ist der Quotient aus der Kraft $F$ und der
+        Auslenkung $s$.
       </p>
       <h3>Formel</h3>
-      $$ R=\frac{U}{I} $$ $$R,\ Widerstand$$
+      $$ D = \frac{F}{s} $$
       <h3>Einheit</h3>
-      $$\left[ R\right] =\Omega $$
-      <h3>Formel</h3>
-      $$ G=\frac{I}{U} $$ $$G,\ Leitwert$$
-      <h3>Einheit</h3>
-      $$\left[ G\right] =\frac{1}{\Omega } $$
+      $$ [D] = \frac{N}{m} $$
+    </div>
+    <div class="scrollButton">
+      <a href="#">Zeréck no uewen</a>
     </div>
   </body>
 </html>

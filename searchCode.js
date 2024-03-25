@@ -482,13 +482,13 @@ var searchListArray = [
       "widerstand",
     ],
   },
-  {
-    id: 3007,
-    link: "Elektrotechnik/ohmschesGesetz.html",
-    subject: "Elektrotechnik",
-    topic: "Ohmsche Gesetz",
-    keyWords: ["widerstand", "Leitwert"],
-  },
+  // {
+  //   id: 3007,
+  //   link: "Elektrotechnik/ohmschesGesetz.html",
+  //   subject: "Elektrotechnik",
+  //   topic: "Ohmsche Gesetz",
+  //   keyWords: ["widerstand", "Leitwert"],
+  // },
   {
     id: 3008,
     link: "Elektrotechnik/widerstandImWechselstromkreis.html",

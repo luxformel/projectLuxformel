@@ -54,7 +54,7 @@ var splashTexts = [
   "hacovercosin",
   "Bonjoo&shy;ouuuuuur",
   "guer net seriö dat doten!",
-  "117 Kapitelen",
+  "122 Kapitelen",
   "288,5 MB",
   "we do not brew coffee - Error : 418",
   "server is a teapot",
@@ -131,6 +131,8 @@ var splashTexts = [
   "www.maths-et-tiques.fr",
   "motivation is a lie",
   "lod.lu",
+  "zls.lu",
+  "llo.lu",
   "verben.lu",
   "Léiwe Kleeschen",
   "Gudde Kleeschen",
@@ -346,12 +348,16 @@ var splashTexts = [
   "D'Klierf zu Clierf!",
   "Luxemburgistik",
   "Zënter éiweg an dräi Deeg",
-  "1/348",
+  "Kalsarikännit",
+  "Physik: fisike, physica, physikḗ, physikós",
+  "Die Jagd beginnt!",
+  "Der Quizgott und Quizvulkan",
+  "1/354",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
   var randomNumber = Math.floor(Math.random() * splashTexts.length);
-  // var randomNumber = 124;
+  //var randomNumber = 350;
   //console.log(randomNumber);
   //console.log(splashTexts[randomNumber]);
   document.querySelector("#sst").innerHTML = splashTexts[randomNumber];
