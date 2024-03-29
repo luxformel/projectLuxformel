@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
+
     <script src="../assets/insertChapterHTML.js"></script>
     <script src="../assets/mathJax.js"></script>
 
@@ -19,7 +20,7 @@
 
     <!-- Equation code -->
 
-    <script defer src="equation.js"></script>
+    <script src="equation.js"></script>
 
     <title>Equations du deuxieme degrée</title>
     <style>
@@ -54,11 +55,11 @@
       <h2 class="settings">Paramètres</h2>
       <form action="">
         <label for="coefficient">Coefficient maximale</label> <br />
-        <input type="coefficient" id="coefficient" value="10" />
+        <input type="coefficient" id="coefficient" value="3" />
         <br />
         <br />
         <label for="number">Nombres des équations a générer</label> <br />
-        <input type="number" id="number" value="25" />
+        <input type="number" id="number" value="250" />
         <br />
         <br />
         <input type="checkbox" id="fractions" />
@@ -74,7 +75,7 @@
           type="button"
           value="Générer"
           id="generateButton"
-          onclick="generateListOfEquations()"
+          onclick="generateQuestions()"
         />
         <input
           type="button"

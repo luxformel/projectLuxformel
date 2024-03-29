@@ -352,7 +352,13 @@ var splashTexts = [
   "Physik: fisike, physica, physikḗ, physikós",
   "Die Jagd beginnt!",
   "Der Quizgott und Quizvulkan",
-  "1/354",
+  "// some code here",
+  "Food for Bomm",
+  "<!DOCTYPE html>",
+  "public static void main(String[] args){}",
+  " var body: some View{}",
+  "I believe in Mirko",
+  "1/360",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
