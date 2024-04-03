@@ -216,7 +216,7 @@ function generateLatexCode(
 
   var equation2 = [a, b, c, d, e, f, statement1, statement2, statement3];
 
-  var equation = solveQuadratic(equation2);
+  var equation = calculateDiscriminant(equation2);
 
   return latexFunction + "<br>" + equation;
 }
@@ -250,39 +250,39 @@ function calculateDiscriminant(generatedEquation) {
   var isBNeg = generatedEquation[7];
   var isCNeg = generatedEquation[8];
 
-  var B = isBNeg ? -(c ^ 2) / (d ^ 2) : (c ^ 2) / (d ^ 2);
+  var B = (c ^ 2) / (d ^ 2);
   var AB = !isANeg && !isCNeg ? (4 * a * e) / (b * f) : -(4 * a * e) / (b * f);
 
   return (delta = B - AB);
 }
 
-function solveQuadratic(a, b, c, d, e, f, a_positive, b_positive, c_positive) {
-  // Compute actual coefficients
-  let a = a_positive ? a / b : -a / b;
-  let b = b_positive ? c / d : -c / d;
-  let c = c_positive ? e / f : -e / f;
+// function solveQuadratic(a, b, c, d, e, f, a_positive, b_positive, c_positive) {
+//   // Compute actual coefficients
+//   let a = a_positive ? a / b : -a / b;
+//   let b = b_positive ? c / d : -c / d;
+//   let c = c_positive ? e / f : -e / f;
 
-  // Compute discriminant
-  let discriminant = b * b - 4 * a * c;
+//   // Compute discriminant
+//   let discriminant = b * b - 4 * a * c;
 
-  if (discriminant > 0) {
-    // Two real and distinct roots
-    let root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
-    let root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
-    return [root1, root2];
-  } else if (discriminant === 0) {
-    // Two real and equal roots
-    let root = -b / (2 * a);
-    return [root, root];
-  } else {
-    // Complex roots
-    let realPart = -b / (2 * a);
-    let imaginaryPart = Math.sqrt(-discriminant) / (2 * a);
-    let root1 = realPart.toFixed(2) + " + " + imaginaryPart.toFixed(2) + "i";
-    let root2 = realPart.toFixed(2) + " - " + imaginaryPart.toFixed(2) + "i";
-    return [root1, root2];
-  }
-}
+//   if (discriminant > 0) {
+//     // Two real and distinct roots
+//     let root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+//     let root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+//     return [root1, root2];
+//   } else if (discriminant === 0) {
+//     // Two real and equal roots
+//     let root = -b / (2 * a);
+//     return [root, root];
+//   } else {
+//     // Complex roots
+//     let realPart = -b / (2 * a);
+//     let imaginaryPart = Math.sqrt(-discriminant) / (2 * a);
+//     let root1 = realPart.toFixed(2) + " + " + imaginaryPart.toFixed(2) + "i";
+//     let root2 = realPart.toFixed(2) + " - " + imaginaryPart.toFixed(2) + "i";
+//     return [root1, root2];
+//   }
+// }
 
 function renderMathJax(element) {
   // Render the LaTeX expression using MathJax

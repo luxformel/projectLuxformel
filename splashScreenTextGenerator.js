@@ -55,7 +55,7 @@ var splashTexts = [
   "Bonjoo&shy;ouuuuuur",
   "guer net seriö dat doten!",
   "122 Kapitelen",
-  "288,5 MB",
+  "1,41 GB",
   "we do not brew coffee - Error : 418",
   "server is a teapot",
   "please convert me",
@@ -354,16 +354,31 @@ var splashTexts = [
   "Der Quizgott und Quizvulkan",
   "// some code here",
   "Food for Bomm",
-  "<!DOCTYPE html>",
-  "public static void main(String[] args){}",
-  " var body: some View{}",
+  " < !DOCTYPE html > ",
+  "public static void main(String[] args){ <br> }",
+  "var body: some View{ <br> }",
   "I believe in Mirko",
-  "1/360",
+  "J'ai eu la chance de ne pas le connaître",
+  "La synthèse des opposés",
+  "generate&shy;RandomText();",
+  "Ethos, Pathos, Logos",
+  "I don't like smalltalk, I prefer largetalk",
+  "D'Sich nom Fong!",
+  "Mam Fong geet am Fong alles!",
+  "Glep",
+  "Hier kommt der Jäger!",
+  "Ce n'est pas possible que les oignons soient des zwiebels!",
+  "What is the probability I appeared?",
+  "Mathematik + Information = Informatik?",
+  "Who is Goonch??",
+  "lüxförmel",
+  "Let's do it S.M.A.R.T.",
+  "1/374",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
   var randomNumber = Math.floor(Math.random() * splashTexts.length);
-  //var randomNumber = 350;
+  //var randomNumber = 355;
   //console.log(randomNumber);
   //console.log(splashTexts[randomNumber]);
   document.querySelector("#sst").innerHTML = splashTexts[randomNumber];
