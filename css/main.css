@@ -419,7 +419,7 @@ q:after {
 
 /*feedback nav tag*/
 /*Optimisatioun fir mini handy*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
   .phone {
     display: inherit;
   }
@@ -436,22 +436,21 @@ q:after {
     padding-left: 25px;
   }
 }
-/*Optimisatioun fir iPad mini/Air*/
-@media only screen and (min-width: 765px) {
-  .main-wrapper {
-    margin: 5px 50px;
-    margin-left: 30px;
-  }
-}
 /*Optimisatioun fir iPad*/
 @media only screen and (min-width: 910px) {
   .main-wrapper {
     margin: 5px 50px;
     margin-left: 50px;
   }
-
   .iPad {
     display: inherit;
+  }
+}
+/*Optimisatioun fir iPad mini/Air*/
+@media only screen and (min-width: 765px) {
+  .main-wrapper {
+    margin: 5px 50px;
+    margin-left: 30px;
   }
 }
 /*Optimisatioun fir ComputerPlus*/

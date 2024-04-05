@@ -54,7 +54,7 @@ var splashTexts = [
   "hacovercosin",
   "Bonjoo&shy;ouuuuuur",
   "guer net seriö dat doten!",
-  "122 Kapitelen",
+  "124 Kapitelen",
   "1,41 GB",
   "we do not brew coffee - Error : 418",
   "server is a teapot",
@@ -93,6 +93,7 @@ var splashTexts = [
   "Hey",
   "God dag",
   "Tjena",
+  "Buona sera",
   "The Power of Now",
   "Things to make and do in the 4th dimension",
   "May contain Mathematics",
@@ -373,7 +374,7 @@ var splashTexts = [
   "Who is Goonch??",
   "lüxförmel",
   "Let's do it S.M.A.R.T.",
-  "1/374",
+  "1/376",
 ];
 function generateRandomText() {
   //console.log(splashTexts);

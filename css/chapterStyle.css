@@ -229,7 +229,7 @@ button {
 }
 /*feedback nav tag*/
 /*Optimisatioun fir mini handy*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
   .phone {
     display: inherit;
   }
@@ -250,7 +250,7 @@ button {
 @media only screen and (min-width: 765px) {
   .main-wrapper {
     margin: 5px 50px;
-    margin-left: 30px;
+    margin-left: 2rem;
   }
 }
 /*Optimisatioun fir iPad*/
