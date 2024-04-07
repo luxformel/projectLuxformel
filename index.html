@@ -1,249 +1,260 @@
 <!DOCTYPE html>
 <html lang="lb" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="author" content="Niederkorn Damon" />
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="utf-8" />
-  <meta name="author" content="Niederkorn Damon" />
+    <!-- Share OG Tags -->
 
-  <!-- Share OG Tags -->
+    <meta property="og:title" content="luxformel" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="luxformel" />
+    <meta property="og:image" content="/img/faviconBig.png" />
+    <meta property="og:image:width" content="1424" />
+    <meta property="og:image:height" content="1424" />
+    <meta property="og:url" content="https://luxformel.info/" />
+    <meta property="og:description" content="Léiert Formelen wei nach nie" />
 
-  <meta property="og:title" content="luxformel" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="luxformel" />
-  <meta property="og:image" content="/img/faviconBig.png" />
-  <meta property="og:image:width" content="1424" />
-  <meta property="og:image:height" content="1424" />
-  <meta property="og:url" content="https://luxformel.info/" />
-  <meta property="og:description" content="Léiert Formelen wei nach nie" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="luxformel.info" />
+    <meta property="twitter:url" content="https://luxformel.info/" />
+    <meta name="twitter:title" content="luxformel" />
+    <meta name="twitter:description" content="Léiert Formelen wei nach nie" />
+    <meta name="twitter:image" content="/img/favicon.png" />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta property="twitter:domain" content="luxformel.info" />
-  <meta property="twitter:url" content="https://luxformel.info/" />
-  <meta name="twitter:title" content="luxformel" />
-  <meta name="twitter:description" content="Léiert Formelen wei nach nie" />
-  <meta name="twitter:image" content="/img/favicon.png" />
+    <!-- PWA -->
 
-  <!-- PWA -->
+    <meta name="theme-color" content="#7d68f9" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="img/favicon.png" />
 
-  <meta name="theme-color" content="#7d68f9" />
-  <link rel="manifest" href="manifest.json" />
-  <link rel="apple-touch-icon" href="img/favicon.png" />
+    <!-- PWA iOS -->
 
-  <!-- PWA iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="luxformel" />
 
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="luxformel" />
+    <!-- iOS Icons -->
 
-  <!-- iOS Icons -->
-
-  <link rel="apple-touch-icon" sizes="120x120" href="PWA/icons/Icon120.png" />
-  <!-- <link rel="apple-touch-icon" sizes="152x152" href="PWA/icons/Icon152.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="PWA/icons/Icon120.png" />
+    <!-- <link rel="apple-touch-icon" sizes="152x152" href="PWA/icons/Icon152.png" />
     <link rel="apple-touch-icon" sizes="167x167" href="PWA/icons/Icon167.png" /> -->
-  <link rel="apple-touch-icon" sizes="180x180" href="PWA/icons/Icon180.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="PWA/icons/Icon180.png" />
 
-  <!-- Favicon -->
+    <!-- Favicon -->
 
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-  <!-- Google Fonts -->
+    <!-- Google Fonts -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&family=Trispace&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen&family=Trispace&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- CSS -->
+    <!-- CSS -->
 
-  <link rel="stylesheet" href="css/resetStyleSheet.css" />
-  <link id="navStylesheet" rel="stylesheet" href="css/settings/relativeNav.css" />
-  <link rel="stylesheet" id="themeStylesheetLink" href="css/Themes/defaultTheme.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="temp.css" />
-  <script defer src="splashScreenTextGenerator.js"></script>
-  <script defer src="Themes JavaScript/theme.js"></script>
-  <script src="PWA/index.js"></script>
-  <title>luxformel</title>
-</head>
+    <link rel="stylesheet" href="css/resetStyleSheet.css" />
+    <link
+      id="navStylesheet"
+      rel="stylesheet"
+      href="css/settings/relativeNav.css"
+    />
+    <link
+      rel="stylesheet"
+      id="themeStylesheetLink"
+      href="css/Themes/defaultTheme.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="temp.css" />
+    <script defer src="splashScreenTextGenerator.js"></script>
+    <script defer src="Themes JavaScript/theme.js"></script>
+    <script src="PWA/index.js"></script>
+    <title>luxformel</title>
+  </head>
 
-<body>
-  <!--     <div class="screenSaver">
+  <body>
+    <!--     <div class="screenSaver">
       <img class="screenSaverImg" src="img/favicon.png" />
     </div> -->
-  <nav>
-    <ul>
-      <li class="inlineNav">
-        <a href="../index.html">luxformel</a>
-      </li>
-      <li class="inlineNav"><a href="../readme.html">Read Me</a></li>
-      <li class="inlineNav">
-        <a class="iPad" href="../feedback.html">Feedback</a>
-      </li>
-      <li class="inlineNav">
-        <a class="iPad" href="Mathe/index.html">Mathe</a>
-      </li>
-      <li class="inlineNav">
-        <a class="iPad" href="../Physik/index.html">Physik</a>
-      </li>
-      <li class="inlineNav">
-        <a class="iPad" href="../Chimie/index.html">Chimie</a>
-      </li>
-      <li class="inlineNav">
-        <a class="iPad" href="../Divers/index.html">Divers</a>
-      </li>
-      <li class="inlineNav">
-        <a class="computer" target="_blank" href="../Calculator/calculator.html">Rechemaschinn
-        </a>
-      </li>
-      <li class="inlineNav">
-        <a class="computer" href="Elektrotechnik/index.html">Elektrotechnik
-        </a>
-      </li>
-      <li class="inlineNav">
-        <a class="computer" href="Informatik/index.html">Informatik </a>
-      </li>
-      <li class="inlineNav">
-        <a class="computerPlus" href="Technologie/index.html">Technologie </a>
-      </li>
-      <li class="inlineNav">
-        <div class="searchImg">
-          <a href="../search.html">
-            <img src="../img/black-24dp-2/2x/baseline_search_black_24dp.png" alt="searchIcon" />
+    <nav>
+      <ul>
+        <li class="inlineNav">
+          <a href="../index.html">luxformel</a>
+        </li>
+        <li class="inlineNav"><a href="../readme.html">Read Me</a></li>
+        <li class="inlineNav">
+          <a class="iPad" href="../feedback.html">Feedback</a>
+        </li>
+        <li class="inlineNav">
+          <a class="iPad" href="Mathe/index.html">Mathe</a>
+        </li>
+        <li class="inlineNav">
+          <a class="iPad" href="../Physik/index.html">Physik</a>
+        </li>
+        <li class="inlineNav">
+          <a class="iPad" href="../Chimie/index.html">Chimie</a>
+        </li>
+        <li class="inlineNav">
+          <a class="iPad" href="../Divers/index.html">Divers</a>
+        </li>
+        <li class="inlineNav">
+          <a class="computer" target="_blank" href="Programmen/calculator.html"
+            >Rechemaschinn
           </a>
+        </li>
+        <li class="inlineNav">
+          <a class="computer" href="Elektrotechnik/index.html"
+            >Elektrotechnik
+          </a>
+        </li>
+        <li class="inlineNav">
+          <a class="computer" href="Informatik/index.html">Informatik </a>
+        </li>
+        <li class="inlineNav">
+          <a class="computerPlus" href="Technologie/index.html">Technologie </a>
+        </li>
+        <li class="inlineNav">
+          <div class="searchImg">
+            <a href="../search.html">
+              <img
+                src="../img/black-24dp-2/2x/baseline_search_black_24dp.png"
+                alt="searchIcon"
+              />
+            </a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <p class="splashScreenText" id="sst"></p>
+    <div id="container">
+      <div id="main">
+        <div class="main-wrapper">
+          <!-- <p class="splashScreenText" id="sst"></p> -->
+          <main>
+            <a href="installeieren.html" class="frontPageBoxlinks">
+              <div class="pwaLink boxlink">
+                <h3>Installéiert Electronvolt!</h3>
+              </div>
+            </a>
+
+            <a href="search.html" class="frontPageBoxlinks">
+              <div class="boxlink">
+                <h3>Search</h3>
+              </div>
+            </a>
+
+            <a href="feedback.html" class="frontPageBoxlinks">
+              <div class="boxlink">
+                <h3>Feedback</h3>
+              </div>
+            </a>
+
+            <a href="Mathe/index.html" class="frontPageBoxlinks">
+              <div class="boxlink">
+                <h3>Mathématiques</h3>
+              </div>
+            </a>
+
+            <a href="Physik/index.html" class="frontPageBoxlinks">
+              <div class="boxlink">
+                <h3>Physik</h3>
+              </div>
+            </a>
+
+            <a href="Chemie/index.html" class="frontPageBoxlinks">
+              <div class="boxlink">
+                <h3>Chemie</h3>
+              </div>
+            </a>
+
+            <a href="Elektrotechnik/index.html" class="frontPageBoxlinks">
+              <div class="boxlink">
+                <h3>Elektrotechnik</h3>
+              </div>
+            </a>
+
+            <a href="Informatik/index.html" class="frontPageBoxlinks">
+              <div class="boxlink">
+                <h3>Informatik</h3>
+              </div>
+            </a>
+
+            <a href="Technologie/index.html" class="frontPageBoxlinks">
+              <div class="boxlink">
+                <h3>Technologie</h3>
+              </div>
+            </a>
+
+            <a href="Messtechnik/index.html" class="frontPageBoxlinks">
+              <div class="boxlink">
+                <h3>Messtechnik</h3>
+              </div>
+            </a>
+
+            <a href="Divers/index.html" class="frontPageBoxlinks">
+              <div class="boxlink">
+                <h3>Divers</h3>
+              </div>
+            </a>
+
+            <a href="Downloads/index.html" class="frontPageBoxlinks">
+              <div class="boxlink">
+                <h3>Download</h3>
+              </div>
+            </a>
+
+            <a href="Programmen/converter.html" class="frontPageBoxlinks">
+              <div class="boxlink">
+                <h3>Converter</h3>
+              </div>
+            </a>
+
+            <a href="Archiv/index.html" class="frontPageBoxlinks">
+              <div class="boxlink">
+                <h3>Archiv</h3>
+              </div>
+            </a>
+
+            <a href="Programmen/index.html" class="frontPageBoxlinks">
+              <div class="boxlink">
+                <h3>Programmen</h3>
+              </div>
+            </a>
+
+            <a href="astellungen.html" class="frontPageBoxlinks">
+              <div class="boxlink">
+                <h3>Astellungen</h3>
+              </div>
+            </a>
+
+            <a href="changeLog.html" class="frontPageBoxlinks">
+              <div class="boxlink">
+                <h3>Change Log</h3>
+              </div>
+            </a>
+          </main>
         </div>
-      </li>
-    </ul>
-  </nav>
-
-  <p class="splashScreenText" id="sst"></p>
-  <div id="container">
-    <div id="main">
-      <div class="main-wrapper">
-        <!-- <p class="splashScreenText" id="sst"></p> -->
-        <main>
-          <a href="installeieren.html" class="frontPageBoxlinks">
-            <div class="pwaLink boxlink">
-              <h3>Installéiert Electronvolt!</h3>
-            </div>
-          </a>
-
-          <a href="search.html" class="frontPageBoxlinks">
-            <div class="boxlink">
-              <h3>Search</h3>
-            </div>
-          </a>
-
-          <a href="feedback.html" class="frontPageBoxlinks">
-            <div class="boxlink">
-              <h3>Feedback</h3>
-            </div>
-          </a>
-
-          <a href="Mathe/index.html" class="frontPageBoxlinks">
-            <div class="boxlink">
-              <h3>Mathématiques</h3>
-            </div>
-          </a>
-
-          <a href="Physik/index.html" class="frontPageBoxlinks">
-            <div class="boxlink">
-              <h3>Physik</h3>
-            </div>
-          </a>
-
-          <a href="Chemie/index.html" class="frontPageBoxlinks">
-            <div class="boxlink">
-              <h3>Chemie</h3>
-            </div>
-          </a>
-
-          <a href="Elektrotechnik/index.html" class="frontPageBoxlinks">
-            <div class="boxlink">
-              <h3>Elektrotechnik</h3>
-            </div>
-          </a>
-
-          <a href="Informatik/index.html" class="frontPageBoxlinks">
-            <div class="boxlink">
-              <h3>Informatik</h3>
-            </div>
-          </a>
-
-          <a href="Technologie/index.html" class="frontPageBoxlinks">
-            <div class="boxlink">
-              <h3>Technologie</h3>
-            </div>
-          </a>
-
-          <a href="Messtechnik/index.html" class="frontPageBoxlinks">
-            <div class="boxlink">
-              <h3>Messtechnik</h3>
-            </div>
-          </a>
-
-          <a href="Divers/index.html" class="frontPageBoxlinks">
-            <div class="boxlink">
-              <h3>Divers</h3>
-            </div>
-          </a>
-
-          <a href="Downloads/index.html" class="frontPageBoxlinks">
-            <div class="boxlink">
-              <h3>Download</h3>
-            </div>
-          </a>
-
-          <a href="Programmen/converter.html" class="frontPageBoxlinks">
-            <div class="boxlink">
-              <h3>Converter</h3>
-            </div>
-          </a>
-
-          <a href="Calculator/calculator.html" class="frontPageBoxlinks">
-            <div class="boxlink">
-              <h3>Rechemaschinn</h3>
-            </div>
-          </a>
-
-          <a href="Archiv/index.html" class="frontPageBoxlinks">
-            <div class="boxlink">
-              <h3>Archiv</h3>
-            </div>
-          </a>
-
-          <a href="Programmen/index.html" class="frontPageBoxlinks">
-            <div class="boxlink">
-              <h3>Programmen</h3>
-            </div>
-          </a>
-
-          <a href="astellungen.html" class="frontPageBoxlinks">
-            <div class="boxlink">
-              <h3>Astellungen</h3>
-            </div>
-          </a>
-
-          <a href="changeLog.html" class="frontPageBoxlinks">
-            <div class="boxlink">
-              <h3>Change Log</h3>
-            </div>
-          </a>
-        </main>
       </div>
     </div>
-  </div>
-  <footer id="footer">
-    <p class="footerTextColor">
-      luxformel.info <br />
-      <br />
-      Designed by: <br />
-      Niederkorn Damon <br />
-      <br />
-      E-mail: <br />
-      feedback@luxformel.info
-    </p>
-  </footer>
-</body>
-
+    <footer id="footer">
+      <p class="footerTextColor">
+        luxformel.info <br />
+        <br />
+        Designed by: <br />
+        Niederkorn Damon <br />
+        <br />
+        E-mail: <br />
+        feedback@luxformel.info
+      </p>
+    </footer>
+  </body>
 </html>

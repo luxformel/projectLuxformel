@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="lb" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script src="../assets/insertChapterHTML.js"></script>
+    <script defer src="../feedbackPopup.js"></script>
+    <script async src="../Themes JavaScript/themeChapter.js"></script>
+    <link rel="stylesheet" href="../css/styleCalculator.css" />
+
+    <script src="javascript/scriptCalculator.js"></script>
+    <title>Rechemaschinn</title>
+  </head>
+  <body>
+    <my-navigator></my-navigator>
+    <div id="container">
+      <div class="main-wrapper">
+        <div class="calculator">
+          <input type="text" class="display" id="display" readonly />
+          <div class="buttons">
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="operation('+')">+</button>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="operation('-')">-</button>
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="operation('*')">*</button>
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="clearLastEntry()">CE</button>
+            <button onclick="operation('/')">/</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="squareRoot()">√</button>
+            <button onclick="percentage()">%</button>
+            <button onclick="sin()">sin</button>
+            <button onclick="cos()">cos</button>
+            <button onclick="tan()">tan</button>
+            <button onclick="clearDisplay()">C</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

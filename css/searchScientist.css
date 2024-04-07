@@ -22,7 +22,7 @@ input {
 .card {
   border: 1px solid var(--black);
   padding: 0.5rem;
-  background-color: var(--d3);
+  background-color: var(--darker-greyColor);
 }
 
 .card > .subject {
@@ -32,6 +32,9 @@ input {
 .card > .topic {
   font-size: 0.6rem;
   color: var(--sixColor);
+}
+p {
+  color: var(--black) !important;
 }
 
 .hide {

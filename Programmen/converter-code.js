@@ -35,7 +35,7 @@ factor[4] = new Array(1, 1e-4);
 
 property[5] = "Frequenz";
 unit[5] = new Array("Hz", "MHz", "GHz", "THz", "1/min");
-factor[5] = new Array(1, 1000000, 1000000000, 1000000000000, 60e-1);
+factor[5] = new Array(1, 1_000_000, 1_000_000_000, 1_000_000_000_000, 60e-1);
 
 property[6] = "Geschwindigkeit";
 unit[6] = new Array("m/s", "km/h", "kn", "mi/h");
@@ -51,7 +51,7 @@ factor[7] = new Array(1, 1000, 1.660_539_066_605e-27, 1000, 0.4535922922);
 
 property[8] = "Temperatur";
 unit[8] = new Array("°C", "°F", "K", "°R");
-factor[8] = new Array(1, 0.555555555555, 1, 0.555555555555);
+factor[8] = new Array(1, 0.555555555555555555555, 1, 0.555555555555555555555);
 tempIncrement = new Array(0, -32, -273.15, -491.67);
 
 property[9] = "Winkel";
@@ -113,16 +113,23 @@ function ConvertFromTo(sourceForm, targetForm) {
   result = sourceForm.unit_input.value;
 
   result = sourceForm.unit_input.value;
-  if (property[propIndex] == "Temperatur") {
-    result = parseFloat(result) + tempIncrement[sourceIndex];
-  }
-  result = result * sourceFactor;
 
-  result = result / targetFactor;
-  if (property[propIndex] == "Temperatur") {
+  if (
+    sourceFactor != 1 &&
+    targetFactor != 1 &&
+    property[propIndex] == "Temperatur"
+  ) {
+    result = (result * sourceFactor) / targetFactor;
+    result = parseFloat(result.toPrecision(15)); // Adjust precision as needed
+  } else if (property[propIndex] == "Temperatur") {
+    result = parseFloat(result) + tempIncrement[sourceIndex];
     result = parseFloat(result) - tempIncrement[targetIndex];
+    result = parseFloat(result.toPrecision(15)); // Adjust precision as needed
+  } else {
+    result = (result * sourceFactor) / targetFactor;
   }
-  targetForm.unit_input.value = result; // Round to 2 decimal places
+
+  targetForm.unit_input.value = result; //.toFixed(5); // Round to 2 decimal places
 }
 
 window.onload = function (e) {
@@ -142,9 +149,10 @@ document.querySelectorAll(".numbersonly").forEach(function (element) {
       "Escape",
       "Delete",
       "Control",
-      // "a",
-      // "c",
-      // "v",
+      "Command",
+      "a",
+      "c",
+      "v",
       "Home",
       "End",
       "ArrowLeft",
@@ -167,5 +175,16 @@ document.querySelectorAll(".numbersonly").forEach(function (element) {
     }
 
     event.preventDefault();
+  });
+  // Listen for the paste event
+  element.addEventListener("paste", function (event) {
+    // Get the pasted data
+    var clipboardData = event.clipboardData || window.clipboardData;
+    var pastedData = clipboardData.getData("text");
+
+    // Check if pasted data contains only numbers
+    if (!/^\d*\.?\d*$/.test(pastedData)) {
+      event.preventDefault();
+    }
   });
 });

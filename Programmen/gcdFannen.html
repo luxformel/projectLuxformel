@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="lb" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script src="../assets/insertChapterHTML.js"></script>
+    <script defer src="../feedbackPopup.js"></script>
+    <script defer src="../print.js"></script>
+    <script async src="../Themes JavaScript/themeChapter.js"></script>
+
+    <link rel="stylesheet" href="../css/resetStyleSheet.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>GCD Fannen</title>
+    <style>
+      /* Basic CSS for layout */
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 50px;
+      }
+      h1 {
+        font-size: 24px;
+        padding: 1rem;
+      }
+      .input-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .input-box {
+        width: calc(50% - 10px);
+        box-shadow: 0 4px 8px var(--black);
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .input-box input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+      }
+      .output-box {
+        width: 100%;
+        box-shadow: 0 4px 8px var(--black);
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .output-box p {
+        margin: 0;
+        font-size: 1.5rem;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        background-color: var(--accentColor);
+        color: var(--white);
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <my-navigator></my-navigator>
+    <div id="container">
+      <div class="main-wrapper">
+        <div class="container">
+          <h1>GCD Fannen</h1>
+          <div class="input-container">
+            <div class="input-box" id="num1-input-box">
+              <input
+                type="number"
+                id="num1"
+                name="num1"
+                min="1"
+                placeholder="Éischt Zuel"
+              />
+            </div>
+            <div class="input-box" id="num2-input-box">
+              <input
+                type="number"
+                id="num2"
+                name="num2"
+                min="1"
+                placeholder="Zweet Zuel"
+              />
+            </div>
+          </div>
+          <div class="output-box" id="output-box">
+            <p>GCD:</p>
+            <div id="gcd">Dréckt "Rechnen" fir den GCD ze fannen</div>
+          </div>
+          <button onclick="calculateGCD()">Rechnen</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Function to calculate GCD
+      function calculateGCD() {
+        const num1 = parseInt(document.getElementById("num1").value);
+        const num2 = parseInt(document.getElementById("num2").value);
+
+        if (isNaN(num1) || isNaN(num2) || num1 < 1 || num2 < 1) {
+          document.getElementById("gcd").textContent = "Ongülteg Zuelen";
+          return;
+        }
+
+        const gcd = findGCD(num1, num2);
+        document.getElementById("gcd").textContent = gcd;
+      }
+
+      // Function to find GCD using Euclidean algorithm
+      function findGCD(a, b) {
+        if (b === 0) {
+          return a;
+        } else {
+          return findGCD(b, a % b);
+        }
+      }
+    </script>
+  </body>
+</html>

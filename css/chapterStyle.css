@@ -22,7 +22,7 @@ aside > p {
   margin-left: 1rem;
 }
 aside {
-  border-left: 0.3rem solid black;
+  border-left: 0.3rem solid var(--black);
   padding-left: 1rem;
 }
 /*Tables*/

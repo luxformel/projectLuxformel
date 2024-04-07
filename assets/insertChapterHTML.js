@@ -22,10 +22,7 @@ class MyNavigator extends HTMLElement {
           <a class="iPad" href="../Divers/index.html">Divers</a>
         </li>
         <li class="inlineNav">
-          <a
-            class="computer"
-            target="_blank"
-            href="../Calculator/calculator.html"
+          <a class="computer" target="_blank" href="../Programmen/calculator.html"
             >Rechemaschinn
           </a>
         </li>

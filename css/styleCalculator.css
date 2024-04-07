@@ -1,0 +1,37 @@
+.calculator {
+  max-width: 25rem; /* 400px converted to rem */
+  margin: 3.125rem auto; /* 50px converted to rem */
+  background-color: var(--darkBackgroundColor);
+  border-radius: 0.313rem; /* 5px converted to rem */
+  padding: 1.25rem; /* 20px converted to rem */
+  box-shadow: 0 0 0.625rem var(--black); /* 10px converted to rem */
+}
+
+.display {
+  width: calc(100% - 2.5rem); /* 40px converted to rem */
+  height: 3.125rem; /* 50px converted to rem */
+  font-size: 1.5rem; /* 24px converted to rem */
+  border: none;
+  border-radius: 0.313rem; /* 5px converted to rem */
+  padding: 0.625rem; /* 10px converted to rem */
+  margin-bottom: 1.25rem; /* 20px converted to rem */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.625rem; /* 10px converted to rem */
+}
+
+button {
+  font-size: 1.5rem; /* 24px converted to rem */
+  padding: 0.625rem; /* 10px converted to rem */
+  border: none;
+  border-radius: 0.313rem; /* 5px converted to rem */
+  cursor: pointer;
+  background-color: var(--white);
+}
+
+button:hover {
+  background-color: var(--oneEColor);
+}

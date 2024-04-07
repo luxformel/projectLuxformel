@@ -17,6 +17,9 @@
   --odd-th-color: rgba(211, 211, 211, 0.316);
   --search-font: black;
   --temp: #7d68f9;
+  /* Define your base font size */
+
+  --base-font-size: 16px;
 }
 /*MathJax Config*/
 .MJX-TEX {

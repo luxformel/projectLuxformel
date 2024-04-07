@@ -16,6 +16,9 @@
   --d3: #d3d3d3;
   --odd-th-color: rgba(237, 172, 237, 0.121);
   --search-font: black;
+  /* Define your base font size */
+
+  --base-font-size: 16px;
 }
 
 @font-face {

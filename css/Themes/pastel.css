@@ -17,6 +17,10 @@
   --odd-th-color: rgba(190, 245, 244, 0.316);
   --search-font: rgb(56, 39, 39);
   --temp: rgb(var(255 * random()), 255 * random(), 255 * random());
+
+  /* Define your base font size */
+
+  --base-font-size: 16px;
 }
 /*MathJax Config*/
 .MJX-TEX {
