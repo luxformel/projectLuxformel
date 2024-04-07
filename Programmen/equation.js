@@ -251,9 +251,12 @@ function calculateDiscriminant(generatedEquation) {
   var isCNeg = generatedEquation[8];
 
   var B = (c ^ 2) / (d ^ 2);
-  var AB = !isANeg && !isCNeg ? (4 * a * e) / (b * f) : -(4 * a * e) / (b * f);
-
-  return (delta = B - AB);
+  var AB =
+    (!isANeg && isCNeg) || (isANeg && !isCNeg)
+      ? -(4 * a * e) / (b * f)
+      : (4 * a * e) / (b * f);
+  var delta = isBNeg ? (delta = B - AB) : (delta = B - AB);
+  return delta;
 }
 
 // function solveQuadratic(a, b, c, d, e, f, a_positive, b_positive, c_positive) {

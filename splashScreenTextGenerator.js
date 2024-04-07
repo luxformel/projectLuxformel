@@ -374,7 +374,17 @@ var splashTexts = [
   "Who is Goonch??",
   "lüxförmel",
   "Let's do it S.M.A.R.T.",
-  "1/376",
+  "A lot of code has been written!",
+  "De Bauzi fir den et Staatstrauer gëtt!",
+  "Nei Spréch!",
+  "We think you are going to like it",
+  "Animus in consulendo liber",
+  "J'ai du déjà vu... je pense...",
+  "Content de te revoir",
+  "A conserver à l'abri du soleil dans un endroit sec et frais",
+  "MVVM? MVC?",
+  "importing Formulas...",
+  "1/386",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
