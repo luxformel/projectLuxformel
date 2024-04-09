@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="lb" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script src="../assets/insertChapterHTML.js"></script>
+    <script defer src="../feedbackPopup.js"></script>
+    <script defer src="../print.js"></script>
+    <script async src="../Themes JavaScript/themeChapter.js"></script>
+
+    <link rel="stylesheet" href="../css/resetStyleSheet.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+      }
+      input {
+        width: 50px;
+        text-align: center;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+    <title>equatiouneLeisen</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Linear Equation Solver</h2>
+      <div>
+        <label for="eq1">Equation: </label>
+        <input type="number" id="a" placeholder="a" />
+        <input type="text" value="x" disabled />
+        <span>+</span>
+        <input type="number" id="b" placeholder="b" />
+        <span>=</span>
+        <input type="number" id="c" placeholder="c" />
+      </div>
+      <button onclick="solveEquation()">Solve</button>
+      <!-- Solution will be rendered here -->
+      <p id="solution"></p>
+    </div>
+
+    <script>
+      function gcd(a, b) {
+        return b ? gcd(b, a % b) : Math.abs(a);
+      }
+
+      function simplifyFraction(numerator, denominator) {
+        const divisor = gcd(numerator, denominator);
+        return `${numerator / divisor}/${denominator / divisor}`;
+      }
+
+      function solveEquation() {
+        // Get coefficients from input fields
+        let a = parseFloat(document.getElementById("a").value);
+        let b = parseFloat(document.getElementById("b").value);
+        let c = parseFloat(document.getElementById("c").value);
+
+        // Check if 'a' is zero
+        if (a === 0) {
+          document.getElementById("solution").innerText =
+            "'a' cannot be zero. Equation is not linear.";
+          return;
+        }
+
+        // Calculate numerator and denominator for the fraction
+        let numerator = c - b;
+        let denominator = a;
+
+        // Check if the fraction is a proper fraction
+        if (Math.abs(numerator) >= Math.abs(denominator)) {
+          // Extract whole number part
+          let wholeNumberPart = Math.floor(numerator / denominator);
+          // Calculate remainder
+          let remainderNumerator = Math.abs(numerator) % denominator;
+          // Simplify the remainder fraction
+          let simplifiedRemainder = simplifyFraction(
+            remainderNumerator,
+            denominator
+          );
+          // Construct the solution with whole number part and proper fraction
+          let solution = `x = ${wholeNumberPart} ${simplifiedRemainder}`;
+          document.getElementById(
+            "solution"
+          ).innerHTML = `Solution: \\[${solution}\\]`;
+        } else {
+          // Simplify the fraction
+          let simplifiedFraction = simplifyFraction(numerator, denominator);
+          let solutionX = fractionToMathJax(simplifiedFraction);
+          // Display solution using MathJax
+          let solution = `x = ${solutionX}`;
+          document.getElementById(
+            "solution"
+          ).innerHTML = `Solution: $${solution}$`;
+        }
+        console.log(simplifiedFraction);
+        // Typeset the solution with MathJax
+        MathJax.typeset();
+        renderMathJax(solution);
+      }
+      function fractionToMathJax(fraction) {
+        // Split the fraction into numerator and denominator
+        let parts = fraction.split("/");
+        let numerator = parts[0];
+        let denominator = parts[1];
+
+        // Build the MathJax code
+        let mathJaxCode = `\\frac{${Math.abs(numerator)}}{${Math.abs(
+          denominator
+        )}}`;
+
+        // Add negative sign if numerator is negative
+        if (numerator < 0) {
+          mathJaxCode = "-" + mathJaxCode;
+        }
+
+        return mathJaxCode;
+      }
+
+      // Example usage
+      console.log(fractionToMathJax("-3/4")); // Output: -\frac{3}{4}
+
+      function renderMathJax(element) {
+        // Render the LaTeX expression using MathJax
+        MathJax.typesetPromise([element]).catch(function (err) {
+          console.log("MathJax error:", err);
+        });
+      }
+    </script>
+  </body>
+</html>

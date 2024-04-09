@@ -1,35 +1,36 @@
 .calculator {
-  max-width: 25rem; /* 400px converted to rem */
-  margin: 3.125rem auto; /* 50px converted to rem */
+  max-width: 25rem;
+  margin: 3.125rem auto;
   background-color: var(--darkBackgroundColor);
-  border-radius: 0.313rem; /* 5px converted to rem */
-  padding: 1.25rem; /* 20px converted to rem */
-  box-shadow: 0 0 0.625rem var(--black); /* 10px converted to rem */
+  border-radius: 0.313rem;
+  padding: 1.25rem;
+  box-shadow: 0 0 0.625rem var(--black);
 }
 
 .display {
-  width: calc(100% - 2.5rem); /* 40px converted to rem */
-  height: 3.125rem; /* 50px converted to rem */
-  font-size: 1.5rem; /* 24px converted to rem */
+  width: calc(100% - 2.5rem);
+  height: 3.125rem;
+  font-size: 1.5rem;
   border: none;
-  border-radius: 0.313rem; /* 5px converted to rem */
-  padding: 0.625rem; /* 10px converted to rem */
-  margin-bottom: 1.25rem; /* 20px converted to rem */
+  border-radius: 0.313rem;
+  padding: 0.625rem;
+  margin-bottom: 1.25rem;
 }
 
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.625rem; /* 10px converted to rem */
+  gap: 0.625rem;
 }
 
 button {
-  font-size: 1.5rem; /* 24px converted to rem */
-  padding: 0.625rem; /* 10px converted to rem */
+  font-size: 1.5rem;
+  padding: 0.625rem;
   border: none;
-  border-radius: 0.313rem; /* 5px converted to rem */
+  border-radius: 0.313rem;
   cursor: pointer;
   background-color: var(--white);
+  color: var(--black);
 }
 
 button:hover {

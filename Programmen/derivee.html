@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="lb" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script src="../assets/insertChapterHTML.js"></script>
+    <script defer src="../feedbackPopup.js"></script>
+    <script defer src="../print.js"></script>
+    <script async src="../Themes JavaScript/themeChapter.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+      async
+    ></script>
+    <link rel="stylesheet" href="../css/resetStyleSheet.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <title>Dérivéeë Rechnen</title>
+
+    <style>
+      .container-derivee {
+        background-color: var(--background-color);
+        border-radius: 10px;
+        box-shadow: 0 4px 6px var(--black);
+        padding: 30px;
+        width: 26rem;
+        text-align: center;
+      }
+
+      h1 {
+        color: var(--black);
+        padding: 1rem;
+      }
+
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+        color: var(--black);
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: var(--accentColor);
+        color: var(--white);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+
+      #result {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+
+      .error {
+        color: #ff0000;
+        font-style: italic;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <my-navigator></my-navigator>
+    <div id="container">
+      <div class="main-wrapper">
+        <div class="container-derivee">
+          <h1>Dérivéeë Rechnen</h1>
+          <label for="function">Schreift Är Funktioun:</label>
+          <input type="text" id="function" />
+          <button onclick="calculateDerivative()">Dérivée Rechnen</button>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+    <script>
+      function calculateDerivative() {
+        var inputFunction = document.getElementById("function").value;
+        try {
+          var derivative = math.derivative(inputFunction, "x").toTex();
+          document.getElementById("result").innerHTML =
+            "D'Dérivée ass: $$" + derivative + "$$";
+          document.getElementById("result").classList.remove("error");
+          MathJax.typeset();
+        } catch (error) {
+          document.getElementById("result").innerHTML =
+            "Error: " + error.message;
+          document.getElementById("result").classList.add("error");
+        }
+      }
+    </script>
+  </body>
+</html>

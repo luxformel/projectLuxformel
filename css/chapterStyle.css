@@ -33,9 +33,6 @@ td {
   width: 90%;
 }
 
-table {
-  max-width: fit-content;
-}
 strong {
   font-size: 2rem;
   font-style: italic;

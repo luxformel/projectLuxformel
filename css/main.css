@@ -158,10 +158,10 @@ footer {
 #footer {
   width: 100%;
   background-color: var(--black);
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 12.5rem; /* Set a fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12.5rem;
 }
 
 .footerTextColor {
@@ -218,9 +218,8 @@ ol > li > a {
 }
 
 .main-wrapper {
-  margin: 0 auto;
-  margin-left: 27px;
-  padding: 30px;
+  margin: 0.5rem auto;
+  padding: 1rem;
 }
 
 main div h3 {
@@ -251,6 +250,8 @@ main div h3 {
   padding: 20px;
   font-size: 1.8rem;
   cursor: pointer;
+  list-style-position: inside;
+  margin-left: 1rem;
 }
 
 .orderedListIndex {
@@ -421,13 +422,20 @@ q:after {
 }
 
 /*feedback nav tag*/
+@media only screen and (min-width: 250px) {
+  .main-wrapper {
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+  }
+}
 /*Optimisatioun fir mini handy*/
 @media only screen and (max-width: 400px) {
   .phone {
     display: inherit;
   }
   .main-wrapper {
-    padding-left: 20px;
+    padding-left: 1rem;
+    margin-left: 1.5rem;
   }
 }
 /*Optimisatioun fir Handy*/
