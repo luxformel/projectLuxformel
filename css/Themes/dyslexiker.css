@@ -1,0 +1,44 @@
+/*root*/
+:root {
+  --vampir: #000;
+  --hacker: green;
+  --scale-factor: 1;
+  --darker-greyColor: #999;
+  --darkBackgroundColor: rgb(218, 218, 218);
+  --white: #fff;
+  --th-bgColor: #bebdbd;
+  --accentColor: hsl(250 100% 50% / 0.6);
+  --black: black;
+  --background-color: #f2f2f2;
+  --sixColor: #666;
+  --oneEColor: #1e1e1e;
+  --bg: rgba(185, 52, 247, 0.5);
+  --d3: #d3d3d3;
+  --odd-th-color: rgba(211, 211, 211, 0.316);
+  --search-font: black;
+  --temp: #7d68f9;
+
+  /* Define your base font size */
+
+  --base-font-size: 16px;
+}
+
+@font-face {
+  font-family: dyslexic-regular;
+  src: url(../../fonts/OpenDyslexic3-Regular.ttf);
+}
+/*MathJax Config*/
+.MJX-TEX {
+  color: #000 !important;
+  font-family: dyslexic-regular !important;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  font-family: dyslexic-regular !important;
+}

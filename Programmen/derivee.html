@@ -27,14 +27,15 @@
         background-color: var(--background-color);
         border-radius: 10px;
         box-shadow: 0 4px 6px var(--black);
-        padding: 30px;
-        width: 26rem;
+        padding: 2rem;
+        max-width: 26rem;
         text-align: center;
       }
 
       h1 {
         color: var(--black);
         padding: 1rem;
+        margin-top: 1rem;
       }
 
       label {
@@ -75,6 +76,11 @@
         color: #ff0000;
         font-style: italic;
         margin-top: 10px;
+      }
+      @media screen and (max-width: 500px) {
+        .container-derivee {
+          margin: 0;
+        }
       }
     </style>
   </head>

@@ -37,7 +37,8 @@
       }
       .number-input {
         width: 100%;
-        padding: 10px;
+        padding: 0.7rem;
+        margin-left: 0;
         margin-bottom: 10px;
         border: 1px solid var(--darker-greyColor);
         border-radius: 5px;
@@ -64,6 +65,11 @@
         border: 1px solid var(--darker-greyColor);
         border-radius: 5px;
         resize: vertical;
+      }
+      @media screen and (max-width: 500px) {
+        .main-wrapper {
+          margin: 0;
+        }
       }
     </style>
   </head>
