@@ -4,16 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <script src="../assets/insertChapterHTML.js"></script>
-    <script defer src="../feedbackPopup.js"></script>
-    <script defer src="../print.js"></script>
+
     <script async src="../Themes JavaScript/themeChapter.js"></script>
 
     <link rel="stylesheet" href="../css/resetStyleSheet.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <title>GCD Fannen</title>
     <style>
+      body {
+        background-color: var(--background-color);
+      }
       /* Basic CSS for layout */
-      .container {
+      .container-gcd {
         max-width: 600px;
         margin: 0 auto;
         text-align: center;
@@ -48,6 +50,7 @@
         overflow: hidden;
         padding: 20px;
         margin-bottom: 20px;
+        background-color: var(--white);
       }
       .output-box p {
         margin: 0;
@@ -75,7 +78,7 @@
     <my-navigator></my-navigator>
     <div id="container">
       <div class="main-wrapper">
-        <div class="container">
+        <div class="container-gcd">
           <h1>GCD Fannen</h1>
           <div class="input-container">
             <div class="input-box" id="num1-input-box">

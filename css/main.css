@@ -470,15 +470,17 @@ q:after {
     display: inherit;
   }
   .main-wrapper {
-    margin: 5px 80px;
     margin-left: 50px;
+    width: 80%;
+    margin: 0 auto !important;
   }
 }
 /*Optimisatioun fir Computer*/
 @media only screen and (min-width: 1445px) {
   .main-wrapper {
-    margin: 5px 80px;
     margin-left: 50px;
+    width: 80%;
+    margin: 0 auto !important;
   }
   .computer {
     display: inherit;

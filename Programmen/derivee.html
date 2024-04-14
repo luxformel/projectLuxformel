@@ -4,8 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <script src="../assets/insertChapterHTML.js"></script>
-    <script defer src="../feedbackPopup.js"></script>
-    <script defer src="../print.js"></script>
     <script async src="../Themes JavaScript/themeChapter.js"></script>
 
     <link
@@ -23,8 +21,11 @@
     <title>Dérivéeë Rechnen</title>
 
     <style>
-      .container-derivee {
+      body {
         background-color: var(--background-color);
+      }
+      .container-derivee {
+        background-color: var(--white);
         border-radius: 10px;
         box-shadow: 0 4px 6px var(--black);
         padding: 2rem;
@@ -102,6 +103,7 @@
     <script>
       function calculateDerivative() {
         var inputFunction = document.getElementById("function").value;
+        inputFunction = toLowerCaseString(inputFunction);
         try {
           var derivative = math.derivative(inputFunction, "x").toTex();
           document.getElementById("result").innerHTML =
@@ -110,8 +112,11 @@
           MathJax.typeset();
         } catch (error) {
           document.getElementById("result").innerHTML =
-            "Error: " + error.message;
+            "Feeler: " + error.message;
           document.getElementById("result").classList.add("error");
+        }
+        function toLowerCaseString(inputString) {
+          return inputString.toLowerCase();
         }
       }
     </script>

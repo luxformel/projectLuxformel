@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="lb" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script src="../assets/insertChapterHTML.js"></script>
+    <script async src="../Themes JavaScript/themeChapter.js"></script>
+    <script src="javascript/elementer.js"></script>
+    <title>Periode System léieren</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: var(--background-color);
+        margin: 0;
+        padding: 0;
+      }
+      .container-pse {
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: var(--white);
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px var(--black);
+      }
+      h1 {
+        color: var(--black);
+      }
+      p {
+        color: var(--black);
+      }
+      select,
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 1px solid var(--background-color);
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      button {
+        background-color: var(--accentColor);
+        color: var(--white);
+        padding: 0.8rem;
+        margin: 0.5rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        opacity: 0.8;
+      }
+      #feedback {
+        margin-top: 20px;
+        color: var(--darker-greyColor);
+        font-size: 18px;
+      }
+      .info {
+        padding: 0.2rem;
+      }
+      .label-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      @media screen and (max-width: 500px) {
+        .container-derivee {
+          margin: 0;
+        }
+      }
+      label {
+        color: var(--accentColor);
+      }
+    </style>
+  </head>
+  <body>
+    <my-navigator></my-navigator>
+    <div id="container">
+      <div class="main-wrapper">
+        <div class="container-pse">
+          <h1>Periode System léieren</h1>
+          <p>Kënnt Dir de maximale Score kréien?</p>
+          <p id="computer-guess"></p>
+          <div class="label-container">
+            <p>Score: <label class="info" for="text" id="score">0</label></p>
+            <p>
+              Match: <label class="info" for="text" id="counter">0</label>/
+              <label for="text" id="max-score">?</label>
+            </p>
+          </div>
+
+          <input type="text" id="input-symbol" placeholder="Symbol" />
+          <input type="text" id="input-name" placeholder="Numm" />
+          <input
+            type="text"
+            id="input-atomic-number"
+            placeholder="Ordungszahl"
+          />
+          <select id="difficulty">
+            <option value="easy">Einfach</option>
+            <option value="hard">Schwéier</option>
+            <option value="ultra">Ultra</option>
+          </select>
+          <label for="text" id="evaluation" style=""></label>
+          <button id="start-button" onclick="startButtonPressed()">
+            Spill ufänken
+          </button>
+          <button id="guess-button" onclick="checkGuess()">Iwwerpréiwen</button>
+
+          <div id="feedback"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
