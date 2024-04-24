@@ -39,7 +39,7 @@
         <li>
           <p>
             Définir une loi de probabilité sur $\Omega$, c'est associer à chaque
-            issue e_i un nombre positif $p(e_i)$ tel que:
+            issue $e_i$ un nombre positif $p(e_i)$ tel que:
           </p>
           $$ p(e_1) + p(e_2) +...+ p(e_n) = 1 $$
         </li>
@@ -82,124 +82,74 @@
       </p>
       $$ p(e_1) = p(e_2) = ... = p(e_n) = \frac{1}{n} = \frac{1}{card \Omega }
       $$
-      <div class="xScrollable">
-        <table>
-          <tr>
-            <th><p>Groupement</p></th>
-            <th><p>Charactérisiques</p></th>
-            <th><p>Noation</p></th>
-            <th><p>Formule</p></th>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                Arrangement avec répétition <br />
-                de $p$ éléments distincts ou non choisi parmi $n$ éléments
-                distincts
-              </p>
-            </td>
-            <td>
-              <ul>
-                <li>
-                  <p>Les éléments donnés ne sont pas tous utilisés.</p>
-                </li>
-                <li>
-                  <p>Les $p$ éléments choisi peuvent se répéter.</p>
-                </li>
-                <li>
-                  <p>
-                    Deux groupements diffèrent soit par l'ordre soit par la
-                    nature des éléments.
-                  </p>
-                </li>
-              </ul>
-            </td>
-            <td>
-              <p>$B_n^p$</p>
-            </td>
-            <td>
-              <p>$B^{p}_{n}=n^{p}$</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                Permutation <br />
-                de $n$ éléments distincts
-              </p>
-            </td>
-            <td>
-              <ul>
-                <li><p>Les $n$ éléments sont tous utilisés.</p></li>
-                <li><p>Les éléments ne se répètent pas.</p></li>
-                <li>
-                  <p>
-                    Deux groupements diffèrent uniquement par l'ordre des
-                    éléments.
-                  </p>
-                </li>
-              </ul>
-            </td>
-            <td>
-              <p>$P_n$</p>
-            </td>
-            <td>
-              <p>$P_{n}=n!$</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                Arrangement sans répétition <br />
-                de $p$ éléments distincts choisis parmi $n$ éléments distincts
-                <br />
-                $p \leqslant n$
-              </p>
-            </td>
-            <td>
-              <ul>
-                <li>Les $n$ éléments donnés ne sont pas tous utilisés.</li>
-                <li>Les $p$ éléments choisis ne se répètent pas.</li>
-                <li>
-                  Deux groupements diffèrent soit par l'ordre soit par la nature
-                  des éléments.
-                </li>
-              </ul>
-            </td>
-            <td><p>$A^{p}_{n}$</p></td>
-            <td><p>$A^{p}_{n}=\frac{n!}{(n-p)!} $</p></td>
-          </tr>
-          <tr>
-            <td>
-              <p>
-                Combinaison <br />
-                de $p$ éléments distincts choisis parmi $n$ éléments distincts
-                <br />
-                $p \leqslant n$
-              </p>
-            </td>
-            <td>
-              <ul>
-                <li>Les $n$ éléments donnés ne sont pas tous utilisés.</li>
-                <li>Les $p$ éléments choisis ne se répètent pas.</li>
-                <li>
-                  Deux groupements diffèrent uniquement par la nature des
-                  éléments.
-                </li>
-              </ul>
-            </td>
-            <td>
-              <p>$C^{p}_{n}$</p>
-            </td>
-            <td>
-              <p>
-                $C^{p}_{n}=\frac{n!}{p!\left( n-p\right) !}
-                =\frac{A^{p}_{n}}{P_{n}} $
-              </p>
-            </td>
-          </tr>
-        </table>
-      </div>
+
+      <h2>Arrangement avec répétition</h2>
+      <p>
+        Arrangement avec répétition $B$ de $p$ éléments distincts ou non choisi
+        parmi $n$ éléments distincts:
+      </p>
+      <ul>
+        <li><p>Les $n$ éléments sont tous utilisés.</p></li>
+        <li><p>Les éléments ne se répètent pas.</p></li>
+        <li>
+          <p>Deux groupements diffèrent uniquement par l'ordre des éléments.</p>
+        </li>
+      </ul>
+      <h3>Formule</h3>
+      $$ B^{p}_{n}=n^{p} $$
+
+      <h2>Permutation</h2>
+
+      <p>Permutation $P$ de $n$ éléments distincts:</p>
+      <ul>
+        <li>
+          <p>Les éléments donnés ne sont pas tous utilisés.</p>
+        </li>
+        <li>
+          <p>Les $p$ éléments choisi peuvent se répéter.</p>
+        </li>
+        <li>
+          <p>
+            Deux groupements diffèrent soit par l'ordre soit par la nature des
+            éléments.
+          </p>
+
+          <h3>Formule</h3>
+          $$P_{n}=n!$$
+        </li>
+      </ul>
+      <h2>Arrangement sans répétition</h2>
+      <p>
+        Arrangement sans répétition $A$ de $p$ éléments distincts choisis parmi
+        $n$ éléments distincts:
+      </p>
+      <ul>
+        <li>Les $n$ éléments donnés ne sont pas tous utilisés.</li>
+        <li>Les $p$ éléments choisis ne se répètent pas.</li>
+        <li>
+          Deux groupements diffèrent soit par l'ordre soit par la nature des
+          éléments.
+        </li>
+      </ul>
+      <h3>Formule</h3>
+      $$A^{p}_{n}=\frac{n!}{(n-p)!} $$ $$\left( p \leqslant n \right)$$
+
+      <h2>Combinaison</h2>
+      <p>
+        Combinaison $C$ de $p$ éléments distincts choisis parmi $n$ éléments
+        distincts:
+      </p>
+      <ul>
+        <li>Les $n$ éléments donnés ne sont pas tous utilisés.</li>
+        <li>Les $p$ éléments choisis ne se répètent pas.</li>
+        <li>
+          Deux groupements diffèrent uniquement par la nature des éléments.
+        </li>
+      </ul>
+      <h3>Formule</h3>
+      $$C^{p}_{n}=\frac{n!}{p!\left( n-p\right) !} =\frac{A^{p}_{n}}{P_{n}} $$
+      $$\left( p \leqslant n \right)$$
+
       <h2>Vocabulaire des événements</h2>
       <h3>Définition</h3>
       <ol>
@@ -309,9 +259,108 @@
       $$ p(A) = \frac{nombre\ d'issues\ de\ A}{nombre\ totales\ d'issues} $$ $$
       =\frac{nombre\ d'issues\ favorable\ de\ A}{nombres\ d'issues\ possibles}
       $$
-    </div>
-    <div class="scrollButton">
-      <a href="#">Zeréck no uewen</a>
+
+      <h2>Arbres pondérés</h2>
+      <h3>Propriétés</h3>
+      <ul>
+        <li>
+          <p>
+            Dans un arbre pondéré, la probabilité d'un chemin est égale au
+            <u>produit</u> des branches qui le composent.
+          </p>
+        </li>
+        <li>
+          <p>
+            Dans un arbre pondéré, la probabilité d'un événement
+            <q>composé</q> est égale à la <u>sommes</u> des probabilité qui le
+            composent.
+          </p>
+        </li>
+      </ul>
+      <h2>Variable aléatoire</h2>
+      <h3>Définition</h3>
+      <p>
+        Pour définir une variable aléatoire $X$ sur un univers $\Omega$ d'une
+        expérience aléatoire, on associe un nombre réel $x_i$, a chaque
+        éventualité $e_i$ de $\Omega$.
+      </p>
+      <h2>Probabilité d'une variable aléatoire</h2>
+      <h3>Définition</h3>
+      <p>
+        La loi de probabilité d'une variable aléatoire $X$ est la fonction qui à
+        chaque valeur $x_i$ prise par $X$ associe la probabilité: $p \left( X =
+        x_i \right)$
+      </p>
+
+      <h2>Espace mathématiques</h2>
+      <h3>Definition</h3>
+      <p>
+        L'espérance mathématique de la variable aléatoire $X$, notée $E \left( X
+        \right)$ est la somme des produits de chaque valeur prise par $X$ par la
+        probabilité que $X$ prenne cette valeur :
+      </p>
+      $$ E \left( X \right) = \sum^{k}_{i=1} x_{i}\cdot P\left( X=x_{i}\right)
+      $$ $$ = x_1 \cdot p \left( X = x_1 \right) + x_2 \cdot p \left( X = x_2
+      \right) + ... + x_k \cdot p \left( X = x_k \right) $$
+      <h3>Propriété</h3>
+      <p>
+        Si $X$ est une variable aléatoire égale au gain algébrique d'un jeu
+        hasard, alors $ E \left( X \right)$ représente le gain moyen auquel on
+        peut s'attendre.
+      </p>
+      <ul>
+        <li>
+          <p>
+            Si $ E \left( X \right) > 0$, on dit que le jeu est
+            <u>favorable</u> au joueur.
+          </p>
+        </li>
+        <li>
+          <p>
+            Si $ E \left( X \right) = 0$, on dit que le jeu est
+            <u>équitable</u> au joueur.
+          </p>
+        </li>
+        <li>
+          <p>
+            Si $ E \left( X \right) < 0$, on dit que le jeu est
+            <u>défavorable</u> au joueur.
+          </p>
+        </li>
+      </ul>
+      <h2>Variance</h2>
+      <h3>Définition</h3>
+      <p>
+        On appelle variance d'une variable aléatoire $X$ le nombre $V(X)$ défini
+        par:
+      </p>
+      $$ V \left( X \right) = \sum^{k}_{i=1} \left( x_{i}-E\left( X\right)
+      \right)^{2} \cdot p\left( X=x_{i}\right) $$ $$ = \left( x_{1}-E\left(
+      X\right) \right)^{2} \cdot p\left( X=x_{1}\right) + \left( x_{2}-E\left(
+      X\right) \right)^{2} \cdot p\left( X=x_{2}\right) +... +\left(
+      x_{k}-E\left( X\right) \right)^{2} \cdot p\left( X=x_{k}\right) $$
+      <h3>Propriété</h3>
+      $$ V \left( X \right) = \sum^{k}_{i=1} x^2_i \cdot p\left( X=x_{i}\right)
+      - \left( E \left( X \right) \right)^2 $$ $$ = x^{2}_{1}\cdot p\left(
+      X=x_{1}\right) + x^{2}_{2}\cdot p\left( X=x_{2}\right) + ... +
+      x^{2}_{k}\cdot p\left( X=x_{k}\right) - \left( E \left( X \right)
+      \right)^2 $$ $$ = E \left( X^2 \right) - \left( E \left( X \right)
+      \right)^2$$
+      <h2>Écart type</h2>
+      <h3>Definition</h3>
+      <p>
+        On appelle écart type d'une variable aléatoire $X$ le nombre $\sigma(X)$
+        défini par:
+      </p>
+      $$ \sigma(X) = \sqrt{V(X)} $$
+      <h3>Propriété</h3>
+      <p>
+        Plus l'écart type et la variance sont grands, plus la variable aléatoire
+        est dispersée.
+      </p>
+      <div class="scrollButton">
+        <a href="#">Zeréck no uewen</a>
+      </div>
     </div>
   </body>
 </html>
