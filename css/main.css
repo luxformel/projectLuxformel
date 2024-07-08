@@ -8,13 +8,12 @@ html {
 }
 body {
   background-color: var(--white);
-  display: flex;
   flex-direction: column;
-  margin: 0;
   position: relative;
+  display: flex;
+  margin: 0;
   height: 100%;
 }
-
 ::selection {
   background: var(--accentColor);
   color: var(--white);
@@ -318,8 +317,8 @@ a img:hover {
   font-size: 2rem;
   text-align: center;
   padding: 1rem;
+  margin: 2rem;
   line-height: 2.5rem;
-  padding-top: 3rem;
 }
 /*quotes*/
 q {
@@ -500,6 +499,7 @@ q:after {
     margin-left: 50px;
     width: 80%;
     margin: 0 auto !important;
+    padding-top: 55px;
   }
 }
 /*Optimisatioun fir Computer*/
@@ -508,6 +508,7 @@ q:after {
     margin-left: 50px;
     width: 80%;
     margin: 0 auto !important;
+    padding-top: 55px;
   }
   .computer {
     display: inherit;

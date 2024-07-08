@@ -1,10 +1,10 @@
 /*main styling*/
 .main-wrapper {
-  padding-top: 50px;
   margin: 0 10px;
+  margin-top: 50px;
   padding: 10px;
-  display: table-column;
-  justify-content: flex-start;
+  /* display: table-column;
+  justify-content: flex-start; */
   height: 100%;
 }
 /*Math jax configuration*/
@@ -283,6 +283,9 @@ button {
     width: auto;
     display: inline-block;
   }
+  .side-navigator {
+    display: none;
+  }
 }
 /*feedback nav tag*/
 @media only screen and (min-width: 250px) {
@@ -348,8 +351,7 @@ button {
 /*Optimisatioun fir Computer*/
 @media only screen and (min-width: 1445px) {
   .main-wrapper {
-    width: 80%;
-    margin: 0 auto;
+    padding-top: 55px;
     margin-left: 18rem !important;
   }
   .computer {
@@ -370,8 +372,7 @@ button {
     display: inherit;
   }
   .main-wrapper {
-    width: 80%;
-    margin: 0 auto;
+    padding-top: 55px;
     margin-left: 18rem !important;
   }
   .mjx-container {
