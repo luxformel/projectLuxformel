@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="lb" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <script defer src="Themes JavaScript/theme.js"></script>
+
+    <script src="PWA/index.js"></script>
+    <script src="assets/insertRootHTML.js"></script>
+    <script defer src="settings.js"></script>
+    <title>Retroformel</title>
+  </head>
+  <body>
+    <my-navigator></my-navigator>
+    <div class="main-wrapper">
+      <h1>Retroformel</h1>
+      <div class="centered">
+        <img
+          src="/img/retroformel-banner.png"
+          class="retroformel-banner"
+          alt="retro-formel-banner"
+        />
+        <p>
+          Wëllkomm op enger Rees zeréck an d'Zäit! <br />Mir schreiwen d'Joer
+          2022 a Luxformel ass an de Startlächer. Dëse Site den nach vun där
+          Zäit ass weist wéi Luxformel deemools ausgesinn huet a soll als
+          Zäitkapsel wierken. <br />
+          Vill Spaass!
+        </p>
+        <div class="retroformel-btn">
+          <a href="https://retro.luxformel.info">Luxformel am Joer 2022!</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <style>
+    .centered {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .retroformel-btn {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .retroformel-btn a {
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      background-color: var(--accentColor);
+      color: var(--white);
+      text-decoration: none;
+    }
+    .retroformel-btn a:hover {
+      opacity: 0.8;
+      color: var(--black);
+    }
+    .retroformel-banner {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+    p {
+      max-width: 80ch;
+      text-align: center;
+    }
+  </style>
+</html>

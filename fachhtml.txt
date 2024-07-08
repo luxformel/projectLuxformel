@@ -3,8 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <script src="../assets/insertChapterHTML.js"></script>
-    <script src="../assets/mathJax.js"></script>
+    <script src="/assets/insertChapterHTML.js"></script>
+    <script src="/assets/mathJax.js"></script>
 
     <script
       type="text/javascript"
@@ -12,11 +12,11 @@
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
     ></script>
-    <script defer src="../feedbackPopup.js"></script>
-    <script defer src="../print.js"></script>
-    <script async src="../Themes JavaScript/themeChapter.
+    <script defer src="/feedbackPopup.js"></script>
+    <script defer src="/print.js"></script>
+    <script async src="/Themes JavaScript/themeChapter.
     js"></script>
-    <script defer src="../assets/insertSideNavigator.js"></script>
+    <script defer src="/assets/insertSideNavigator.js"></script>
 
 
     <title>TITLE</title>

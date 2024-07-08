@@ -575,7 +575,8 @@ var splashTexts = [
   "Den Air-Freier!",
   "Correct calculations <br> That reveal all secrets!",
   "yar har fiddle dee dee",
-  "1/577",
+  "retro.luxformel.info!!!!",
+  "1/578",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
