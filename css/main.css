@@ -316,8 +316,8 @@ a img:hover {
   font-family: "Silkscreen", cursive;
   font-size: 2rem;
   text-align: center;
-  padding: 1rem;
-  margin: 2rem;
+  padding: 1rem 0;
+  margin: 2rem 0;
   line-height: 2.5rem;
 }
 /*quotes*/

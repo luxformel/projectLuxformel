@@ -364,6 +364,9 @@ button {
   .side-navigator {
     display: inherit;
   }
+  .scrollButton > a {
+    margin-left: 16rem;
+  }
 }
 
 /*Optimisatioun fir ComputerPlus*/
@@ -381,5 +384,8 @@ button {
   }
   .side-navigator {
     display: inherit;
+  }
+  .scrollButton > a {
+    margin-left: 16rem;
   }
 }

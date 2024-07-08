@@ -198,7 +198,8 @@ let sideNav = `
     >
     <a href="/Technologie/zahnradtriebe.html">Zahnradtriebe</a>
   </div>
-  <a href="#contact">Contact</a>
+  <a href="/Archiv/index.html">Archiv</a>
+  <a href="/Programmen/index.html">Programmen</a>
 </div>
 
 

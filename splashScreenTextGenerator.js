@@ -546,7 +546,7 @@ var splashTexts = [
   "glub glub",
   "And it goes like this...",
   "My formulas bring all the boys to the yard <br> and they're like it's better than yours",
-  "Let's have some fun this eqution is sick <br> I wanna take a ride on you sinus wave",
+  "Let's have some fun this eqution is sick <br> I wanna take a ride on your sinus wave",
   "I like to solve it, solve it",
   "Il m'entaînent au bout de la nuit les demons de minuit",
   "I ain't happy, I'm feeling glad <br> I got sunshine in a bag",
