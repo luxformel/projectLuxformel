@@ -11,7 +11,6 @@ setTheme();
 
 const currentNavSetting = localStorage.getItem("navSetting") || "relativeNav";
 const navStylesheet = document.getElementById("navStylesheet");
-console.log(currentNavSetting);
 
 function activateNavSetting(navSettingName) {
   navStylesheet.setAttribute("href", `../css/settings/${navSettingName}.css`);

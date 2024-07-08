@@ -7,10 +7,12 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  min-height: 100vh !important;
   background-color: var(--white);
-  display: flex; /* Use flexbox */
-  flex-direction: column; /* Stack children vertically */
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+  height: 100%;
 }
 
 ::selection {
@@ -186,6 +188,8 @@ footer {
   width: calc(100% - 20px);
   background-color: var(--background-color);
   cursor: pointer;
+  border-radius: 0.2rem;
+  min-width: 15rem;
 }
 
 .boxlink h3 {
@@ -199,15 +203,38 @@ footer {
   font-weight: 600;
 }
 
+.boxlink:hover {
+  opacity: 0.8;
+  color: var(--accentColor);
+  transform: scale(1.05); /* Slightly scale the element */
+  box-shadow: 0 0.8rem 0.5rem var(--accentColor); /* Larger shadow for a lifted effect */
+}
+
 /*change box shadow buggyness  old styling: 3px 3px var(--darker-greyColor)*/
+
 .boxlink h3:hover {
   color: var(--accentColor);
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0.5em 0.2em 0.1em 0.2rem;
+}
+
+/* Optional: Add some padding and border-radius for better visual */
+.boxlink h3 {
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-out;
 }
 
 .boxlink h3 a {
   display: block;
+}
+
+.grid-layout {
+  display: grid;
+  /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  max-width: 100%; /* Ensure the container doesn't exceed the viewport 
+  width */
+  min-width: 100%;
+  width: 100%;
 }
 
 ol > li > a {

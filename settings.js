@@ -32,6 +32,8 @@ function initNavSetting() {
   });
   navigatorSelect.value = currentNavSetting;
   activateTheme(currentNavSetting);
+
+  console.log(currentNavSetting);
 }
 
 initNavSetting();

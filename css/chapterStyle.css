@@ -1,13 +1,18 @@
 /*main styling*/
 .main-wrapper {
+  padding-top: 50px;
   margin: 0 10px;
   padding: 10px;
+  display: table-column;
+  justify-content: flex-start;
+  height: 100%;
 }
 /*Math jax configuration*/
 .MTH-TEX {
   padding: 0;
   margin: 0;
   font-size: 2rem !important;
+  z-index: 0 !important;
 }
 .has-jax {
   overflow-x: auto;
@@ -141,6 +146,57 @@ button {
   width: 70%;
   max-width: 20rem;
 }
+
+/*Side navigator*/
+
+.side-navigator {
+  height: 100%;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+  padding-top: 1rem;
+  width: 16rem;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  /* background-color: var(--odd-th-color); */
+  margin-top: 50px;
+  background-color: var(--odd-th-color);
+  flex-direction: column;
+  display: block;
+  z-index: 0;
+}
+
+.side-navigator a {
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "Roboto Mono", monospace;
+  color: var(--oneEColor);
+  display: block;
+  position: static;
+}
+
+.side-navigator a:hover {
+  background-color: var(--accentColor);
+  opacity: 0.5;
+  color: var(--white);
+}
+
+.submenu {
+  display: none;
+  padding-left: 20px;
+}
+
+.submenu a {
+  opacity: 0.8;
+  font-size: 1rem;
+}
+
+.submenu.open {
+  display: block;
+}
+
 /*Optimisatioun fir Printfunktioun*/
 @media print {
   nav {
@@ -150,6 +206,9 @@ button {
     display: none;
   }
   footer {
+    display: none;
+  }
+  footer > p {
     display: none;
   }
   body {
@@ -231,6 +290,9 @@ button {
     margin-left: 1.5rem;
     padding-left: 1rem;
   }
+  .side-navigator {
+    display: none;
+  }
 }
 /*Optimisatioun fir mini handy*/
 @media only screen and (max-width: 400px) {
@@ -241,6 +303,9 @@ button {
     padding-left: 1rem;
     margin-left: 1.5rem;
   }
+  .side-navigator {
+    display: none;
+  }
 }
 /*Optimisatioun fir Handy*/
 @media only screen and (min-width: 500px) {
@@ -250,7 +315,22 @@ button {
   .main-wrapper {
     padding-left: 25px;
   }
+  .side-navigator {
+    display: none;
+  }
 }
+
+/*Optimisatioun fir iPad mini/Air*/
+@media only screen and (min-width: 765px) {
+  .main-wrapper {
+    margin: 5px 50px;
+    margin-left: 30px;
+  }
+  .side-navigator {
+    display: none;
+  }
+}
+
 /*Optimisatioun fir iPad*/
 @media only screen and (min-width: 910px) {
   .main-wrapper {
@@ -260,35 +340,17 @@ button {
   .iPad {
     display: inherit;
   }
-}
-/*Optimisatioun fir iPad mini/Air*/
-@media only screen and (min-width: 765px) {
-  .main-wrapper {
-    margin: 5px 50px;
-    margin-left: 30px;
+  .side-navigator {
+    display: none;
   }
 }
-/*Optimisatioun fir ComputerPlus*/
-@media only screen and (min-width: 1550px) {
-  .computerPlus {
-    display: inherit;
-  }
-  .main-wrapper {
-    margin-left: 50px;
-    width: 80%;
-    margin: 0 auto !important;
-  }
-  .mjx-container {
-    max-width: 800px !important;
-    margin: 0 auto !important;
-  }
-}
+
 /*Optimisatioun fir Computer*/
 @media only screen and (min-width: 1445px) {
   .main-wrapper {
-    margin-left: 50px;
     width: 80%;
-    margin: 0 auto !important;
+    margin: 0 auto;
+    margin-left: 18rem !important;
   }
   .computer {
     display: inherit;
@@ -296,5 +358,27 @@ button {
   .mjx-container {
     max-width: 800px !important;
     margin: 0 auto !important;
+  }
+  .side-navigator {
+    display: inherit;
+  }
+}
+
+/*Optimisatioun fir ComputerPlus*/
+@media only screen and (min-width: 1550px) {
+  .computerPlus {
+    display: inherit;
+  }
+  .main-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 18rem !important;
+  }
+  .mjx-container {
+    max-width: 800px !important;
+    margin: 0 auto !important;
+  }
+  .side-navigator {
+    display: inherit;
   }
 }

@@ -27,6 +27,8 @@
 }
 
 nav {
+  z-index: 30;
+  height: 50px;
   background-color: cyan !important;
 }
 .boxlink {
@@ -36,7 +38,14 @@ nav {
   color: blue !important;
 }
 .changeLogText {
-  color: #666 !important;
+  .changeLogText {
+    font-size: 1rem;
+    list-style-type: disc;
+    padding: 15px;
+    color: var(--sixColor);
+    line-height: 1.2rem;
+    max-width: 65ch;
+  }
 }
 
 li a {
@@ -57,16 +66,28 @@ h3 {
   font-style: italic !important;
 }
 #footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12.5rem;
   background-color: black !important;
 }
 
 .footerTextColor {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
   color: white !important;
   text-align: center !important;
-  font-family: "Roboto Mono", monospace !important;
 }
 
 h1 {
+  text-align: left;
+  font-size: 2rem;
+  letter-spacing: -0.05rem;
+  color: var(--black);
+
   text-decoration: underline !important;
   text-transform: uppercase !important;
   font-family: Arial !important;
@@ -75,12 +96,180 @@ h1 {
 
 h2 {
   text-decoration: underline;
+  font-size: 1.7rem;
+  margin: 10px;
+  color: var(--black);
 }
-.frontPageBoxlinls {
+h3 {
+  font-size: 1.15rem;
+  font-style: italic;
+  padding: 0.7rem;
+  color: var(--black);
+}
+h4 {
+  font-weight: bold;
+  color: var(--black);
+}
+strong {
+  color: var(--black);
+}
+/*Archiv center Text*/
+.uppercase {
+  text-transform: capitalize;
+  font-family: "Roboto Mono", monospace;
+  font-style: italic;
+}
+p {
+  line-height: 2.4rem;
+  font-family: serif;
+  font-size: 1.1rem;
+  margin: 10px;
+  text-align: justify;
+  color: var(--black);
+}
+
+.searchButton {
+  cursor: pointer;
+  position: static;
+  top: 0;
+  right: 0;
+}
+.frontPageBoxlinks {
   text-decoration: none !important;
   color: black !important;
   font-family: "Roboto Mono", monospace !important;
+  cursor: pointer;
 }
 .indexLink:hover {
   color: blue !important;
+}
+
+.boxlink {
+  margin: 10px;
+  width: calc(100% - 20px);
+  background-color: var(--background-color);
+  cursor: pointer;
+  border-radius: none !important;
+  min-width: 15rem;
+}
+.boxlink:hover {
+  opacity: none;
+  color: none;
+  transform: none;
+  box-shadow: none !important;
+}
+
+.boxlink h3 {
+  width: calc(100% - 20px);
+  line-height: 6rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 2rem;
+  font-family: "Garamond", "Georgia";
+  font-weight: 600;
+  padding: none;
+  border-radius: none !important;
+  transition: none;
+}
+
+/*change box shadow buggyness  old styling: 3px 3px var(--darker-greyColor)*/
+.boxlink h3:hover {
+  color: var(--accentColor);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0.5em 0.2em 0.1em 0.2rem;
+}
+
+.boxlink h3 a {
+  display: inline;
+}
+
+.grid-layout {
+  display: inline !important;
+  grid-template-columns: none;
+  max-width: none;
+  width: auto;
+}
+
+body {
+  min-height: 100vh !important;
+  background-color: var(--white);
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack children vertically */
+}
+::selection {
+  background: var(--accentColor);
+  color: var(--white);
+}
+#container {
+  flex: 1; /* Grow to fill remaining space */
+}
+nav > ul > li {
+  list-style: none;
+}
+li > a {
+  text-decoration: none;
+  text-transform: none;
+  font-size: 20px;
+
+  font-family: "Roboto Mono", monospace;
+  color: var(--oneEColor);
+  padding: 0 12px;
+  display: block;
+}
+
+ul li a:hover {
+  color: var(--white);
+}
+p > a {
+  text-decoration: underline;
+  font-size: 1.1rem;
+  font-family: serif;
+  line-height: 2.4rem;
+  text-align: justify;
+  color: blue;
+}
+.anhangLinken > ol > li > ul > li > a {
+  text-indent: 3rem;
+}
+.anhangLinken > ol > li > ul > li > a:hover {
+  color: var(--accentColor);
+}
+.inlineNav {
+  display: inline-block;
+  float: left;
+  line-height: 50px;
+}
+.computerPlus {
+  display: none;
+}
+.iPad {
+  display: none;
+}
+.computer {
+  display: none;
+}
+.phone {
+  display: none;
+}
+.main-wrapper {
+  margin: 0.5rem auto;
+  padding: 1rem;
+}
+
+main div h3 {
+  text-transform: uppercase;
+  font-family: Garamond;
+  font-style: normal;
+}
+ol > li > a {
+  font-size: 1.2rem;
+
+  display: block;
+  line-height: 2rem;
+}
+.block {
+  font-family: serif;
+  text-align: justify;
+  font-size: 1.15rem;
 }

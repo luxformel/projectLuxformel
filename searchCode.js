@@ -1541,6 +1541,13 @@ var searchListArray = [
     keyWords: [""],
   },
   {
+    id: 7010,
+    link: "Informatik/zahlenbereicheDerBinaerzahlen.html",
+    subject: "Informatik",
+    topic: "Zahlenbereiche der Binärzahlen",
+    keyWords: [""],
+  },
+  {
     id: 8000,
     link: "Messtechnik/messtechnik.html",
     subject: "Messtechnik",

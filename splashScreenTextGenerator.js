@@ -462,7 +462,7 @@ var splashTexts = [
   "Get, get, get, get, got, got, got, got,",
   "Convergence!",
   "U-Void Syntheziser",
-  "Bass d'Essenz vum Liewen!",
+  "Bass; d'Essenz vum Liewen!",
   "digital hardcore",
   "Tri o let",
   "ta ti ti tiri tiri ta",
@@ -564,12 +564,23 @@ var splashTexts = [
   "We at luxformel, we love water",
   "How do I center a div?",
   "Uploading downdate...",
-  "1/565",
+  "A dazzling display of logic!",
+  "Have you met Hugo yet?",
+  "I've been studying the dark arts and mastering their secrets!",
+  "You dare interfere with his devine mission?",
+  "Who is this strange individual?",
+  "luxcook.lu???",
+  "Le Tour de Luxformel!",
+  "hie verzielt vu mueres bis owes nëmmen Absurditéiten",
+  "Den Air-Freier!",
+  "Correct calculations <br> That reveal all secrets!",
+  "yar har fiddle dee dee",
+  "1/577",
 ];
 function generateRandomText() {
   //console.log(splashTexts);
   var randomNumber = Math.floor(Math.random() * splashTexts.length);
-  //var randomNumber = 560;
+  //var randomNumber = 574;
   //console.log(randomNumber);
   //console.log(splashTexts[randomNumber]);
   document.querySelector("#sst").innerHTML = splashTexts[randomNumber];

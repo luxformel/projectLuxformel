@@ -3,8 +3,8 @@ function printFunc() {
   //themeStylesheetLink.setAttribute("href", `css/Themes/defaultTheme.css`);
 
   //sets watermark
-  document.getElementById("printWatermark").innerHTML =
-    "https://luxformel.info/";
+  //document.getElementById("printWatermark").innerHTML =
+  //  "https://luxformel.info/";
 
   //prints the window
   window.print();

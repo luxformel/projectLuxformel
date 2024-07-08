@@ -89,7 +89,7 @@ let head = `<meta name="viewport" content="width=device-width, initial-scale=1.0
     <!-- PWA -->
 
     <meta name="theme-color" content="#7d68f9" />
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="../manifest.json" />
     <link rel="apple-touch-icon" href="img/favicon.png" />
 
     <!-- PWA iOS -->
@@ -144,7 +144,6 @@ let head = `<meta name="viewport" content="width=device-width, initial-scale=1.0
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
-
 `;
 
 document.querySelector("head").innerHTML = head;

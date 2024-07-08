@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  padding: 1.8rem;
+  max-width: 250rem;
+  width: 100%;
+}
+
+.book-card {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 1rem var(--accentColor);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.book-card:hover {
+  transform: translateY(-10px);
+}
+
+.book-info h2 {
+  margin-top: 0;
+}
+
+.book-cover img {
+  max-width: 70%;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.book-cover img:hover {
+  transform: scale(1.05);
+}
+
+.book-description {
+  line-height: 1.8rem !important;
+}
